@@ -1,0 +1,95 @@
+.why-section {
+  padding: 100px 20px;
+  background: #f4f6f9;
+}
+
+.why-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-title {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 70px;
+  color: #111827;
+}
+
+.why-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.why-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.why-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.why-points {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.why-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.check-icon {
+  min-width: 32px;
+  height: 32px;
+  background: #f97316;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.why-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111827;
+}
+
+.why-item p {
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+@media (max-width: 992px) {
+  .why-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .why-item {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .why-points {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .why-title {
+    font-size: 34px;
+  }
+}

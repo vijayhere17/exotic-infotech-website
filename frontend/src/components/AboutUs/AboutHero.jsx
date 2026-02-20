@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutHero.css";
 import { FaStar } from "react-icons/fa";
+import image from "../../assets/exoticphotos/img7.jpeg";
 
 const AboutHero = () => {
   return (
@@ -33,8 +34,8 @@ const AboutHero = () => {
 
         <div className="about-right">
           <img
-            src="/assets/about-illustration.png"
-            alt="Techforce Illustration"
+            src={image}
+            alt="Exotic Infotech"
           />
         </div>
       </div>

@@ -1,14 +1,12 @@
 import React from "react";
 import "./WhyChoose.css";
 import { FaCheck } from "react-icons/fa";
-import developerImg from "./developer-illustration.png"; 
+import image from "../../assets/exoticphotos/img3.jpeg";
+
 // Replace with your actual image path
 
 const points = [
-  {
-    title: "ISO 9001:2015 Certified",
-    desc: "Quality-first processes with structured documentation and continuous improvement frameworks.",
-  },
+  
   {
     title: "Agile Delivery",
     desc: "Sprint-based execution with transparency and flexibility.",
@@ -31,15 +29,15 @@ export default function WhyChoose() {
   return (
     <section className="why-section">
       <div className="why-container">
-        <h2 className="why-title">Why Choose Techforce?</h2>
+        <h2 className="why-title">Why Choose Exotic Infotech?</h2>
 
         <div className="why-content">
-          {/* Left Illustration */}
+          
           <div className="why-image">
-            <img src={developerImg} alt="Developer Illustration" />
+            <img src={image} alt="Developer Illustration" />
           </div>
 
-          {/* Right Content */}
+          
           <div className="why-points">
             {points.map((item, index) => (
               <div key={index} className="why-item">

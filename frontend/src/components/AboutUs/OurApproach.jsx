@@ -43,7 +43,7 @@ export default function OurApproach() {
         <h2 className="title">Our Approach</h2>
 
         <p className="description">
-          At Techforce Global, we believe in a consultative approach. Our
+          At Exotic Infotech Global, we believe in a consultative approach. Our
           process begins by understanding your business needs, defining the
           technical roadmap, and delivering robust solutions tailored to your
           requirements. We emphasize transparency, collaboration, and continuous

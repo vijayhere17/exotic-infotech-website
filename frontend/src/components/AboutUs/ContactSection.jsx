@@ -10,7 +10,8 @@ export default function ContactSection() {
           <h3>Let's Innovate Together!</h3>
           <p>
             Let's collaborate to create something amazing! We are dedicated to
-            delivering fast and transforming solutions to address your challenges.
+            delivering fast and transforming solutions to address your
+            challenges.
           </p>
 
           <form>
@@ -38,30 +39,24 @@ export default function ContactSection() {
         </div>
 
         <div className="contact-info">
-          <div className="badge">
-            <FaStar /> Connect with Us
-          </div>
-
-          <h2>
-            Get in touch and bring your tech ideas to life!
-          </h2>
+          <h2>Get in touch and bring your tech ideas to life!</h2>
 
           <div className="country-cards">
             <div className="country-card">
-              <div className="icon">🗿</div>
               <h4>India</h4>
-              <p>+91+91 8511624907</p>
+              <p>+91 8511624907</p>
             </div>
+          </div>
+
           <div className="contact-bottom">
             <div className="appointment">
-              <FaCalendarAlt className="bottom-icon blue" />
               <span>Book an Appointment</span>
             </div>
 
             <div className="email">
-              <FaEnvelope className="bottom-icon orange" />
               <span>Info@exoticinfo.com</span>
             </div>
+            
           </div>
         </div>
       </div>

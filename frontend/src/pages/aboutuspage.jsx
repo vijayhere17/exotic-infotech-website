@@ -11,7 +11,7 @@ export default function AboutUsPage() {
   return (
     <div>
       <AboutHero />
-      <ServicesSection />
+      <ServiceSection />
       <OurApproach />
       <WhyChooseUs />
       <LifeAtExotic />

@@ -1,9 +1,9 @@
 import React from "react";
-import Hero from "../components/Hero/Hero";
-import Services from "../components/Services/ServiceSection";
-import Counter from "../components/CounterSection/CounterSection";
-import ApproachSection from "../components/ApproachSection/ApproachSection";
-import Leader from "../components/Leader/OurLeaders";
+import Hero from "../components/Homepage/Hero";
+import Services from "../components/Homepage/ServiceSection";
+import Counter from "../components/Homepage/CounterSection";
+import ApproachSection from "../components/Homepage/ApproachSection";
+import Leader from "../components/Homepage/OurLeaders";
 
 export default function Homepage() {
   return (

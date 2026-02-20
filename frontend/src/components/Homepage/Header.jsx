@@ -37,8 +37,8 @@ const Header = () => {
           <ul className="nav-menu">
           
             <li className="nav-item">
-              <Link to="/about-us" className="nav-link">
-                About Us
+              <Link to="/company" className="nav-link">
+                Company
               </Link>
             </li>
 
@@ -133,34 +133,42 @@ const Header = () => {
                 </div>
               </div>
             </li>
-
-            {/* Portfolio */}
+             <li className="nav-item">
+              <Link to="/technology" className="nav-link">
+                Technology
+              </Link>
+            </li>
+           
             <li className="nav-item">
               <Link to="/design" className="nav-link">
                 Design
               </Link>
             </li>
 
-            {/* Blog */}
+               <li className="nav-item">
+              <Link to="/industries" className="nav-link">
+                Industries
+              </Link>
+            </li>
+
+         
             <li className="nav-item">
               <Link to="/blog" className="nav-link">
                 Blog
               </Link>
             </li>
 
-            {/* Industries */}
-            <li className="nav-item">
-              <Link to="/industries" className="nav-link">
-                Industries
-              </Link>
-            </li>
+      
 
-            {/* Contact Button */}
+           
+           
             <li>
               <Link to="/contact">
                 <button className="contact-btn">Let's Connect</button>
               </Link>
             </li>
+
+            
           </ul>
         </nav>
       </div>

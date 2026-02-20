@@ -1,14 +1,14 @@
 import { Routes, Route } from "react-router-dom";
 
-import Headersection from "./components/HeaderSection/HeaderSection";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Footersection from "./components/FooterSection/FooterSection";
-import ServiceDetails from "./components/ServicesPage/ServiceDetails";
+import Headersection from "./components/Homepage/HeaderSection";
+import Header from "./components/Homepage/Header";
+import Footer from "./components/Homepage/Footer";
+import Footersection from "./components/Homepage/FooterSection";
+import ServiceDetails from "./pages/ServiceDetails";
 
 import Homepage from "./pages/Homepage";
-import AboutUsPage from "./pages/aboutuspage";
-import Portfolio from "./pages/Portfolio";
+import Company from "./pages/aboutuspage";
+import Design from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import Industries from "./pages/Industries";
 import Contact from "./pages/Contact";
@@ -22,13 +22,13 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/company" element={<Company />} />
+        <Route path="/design" element={<Design />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/servicesPage/:slug" element={<ServiceDetails />} />
-      
+        <Route path="/services/:slug" element={<ServiceDetails />} />
+
         <Route path="*" element={<div>404 Page Not Found</div>} />
       </Routes>
       <WhatsAppButton />

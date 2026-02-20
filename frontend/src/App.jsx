@@ -4,6 +4,7 @@ import Headersection from "./components/HeaderSection/HeaderSection";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Footersection from "./components/FooterSection/FooterSection";
+import ServiceDetails from "./components/ServicesPage/ServiceDetails";
 
 import Homepage from "./pages/Homepage";
 import AboutUsPage from "./pages/aboutuspage";
@@ -26,7 +27,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/industries" element={<Industries />} />
         <Route path="/contact" element={<Contact />} />
-
+        <Route path="/servicesPage/:slug" element={<ServiceDetails />} />
       
         <Route path="*" element={<div>404 Page Not Found</div>} />
       </Routes>

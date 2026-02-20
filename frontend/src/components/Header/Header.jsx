@@ -136,8 +136,8 @@ const Header = () => {
 
             {/* Portfolio */}
             <li className="nav-item">
-              <Link to="/portfolio" className="nav-link">
-                Portfolio
+              <Link to="/design" className="nav-link">
+                Design
               </Link>
             </li>
 

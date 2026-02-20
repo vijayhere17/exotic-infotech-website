@@ -1,5 +1,6 @@
 
 import java from "../assets/images/java.jpg";
+import React from "../assets/images/react.png";
 
 const services = [
   {
@@ -27,6 +28,30 @@ const services = [
         title: "Scalable",
         description: "Handles high traffic and complex operations.",
       },
+            {
+
+        title: "Enterprise Ready",
+
+        description: "Robust architecture for large-scale systems.",
+
+      },
+
+      {
+
+        title: "Highly Secure",
+
+        description: "Advanced security implementation for enterprise apps.",
+
+      },
+
+      {
+
+        title: "Scalable",
+
+        description: "Handles high traffic and complex operations.",
+
+      },
+
     ],
 
     offerings: [
@@ -55,13 +80,13 @@ const services = [
       title: "React Development",
       description:
         "We build modern, high-performance web applications using React with scalable frontend architecture.",
-      image: "/images/services/react.png",
+      image: React,
     },
 
-    benefits: [
+    whatwedo: [
       {
-        title: "Fast Rendering",
-        description: "Virtual DOM ensures blazing fast performance.",
+        title: "Fast Performance",
+        description: "React lets you build user interfaces out of individual pieces called components.",
       },
       {
         title: "Reusable Components",
@@ -71,6 +96,15 @@ const services = [
         title: "SEO Friendly",
         description: "Optimized architecture for better ranking.",
       },
+      {
+        title: "Fast Performance",
+        description: "React lets you build user interfaces out of individual pieces called components.",
+      },
+      {
+        title: "Reusable Components",
+        description: "Efficient development using modular components.",
+      },
+      
     ],
 
     offerings: [

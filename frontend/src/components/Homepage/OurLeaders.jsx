@@ -45,7 +45,7 @@ const teamMembers = [
 
 const interns = [
   {
-    name: "Nikhi Patel",
+    name: "Nikhil Patel",
     role: "Full-Stack Developer",
     img: nikhil,
   },

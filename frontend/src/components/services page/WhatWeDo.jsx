@@ -1,52 +1,68 @@
 import "./WhatWeDo.css";
-import { FaCode, FaServer, FaMobileAlt, FaCloud, FaExchangeAlt, FaUserTie } from "react-icons/fa";
-
-const services = [
-  {
-    icon: <FaCode />,
-    title: "Java Web Development Services",
-    desc: "We offer robust Java frameworks like Apache Struts, Spring, Java Server Faces (JSF), JSP-Servlets which provide stability, flexibility and security."
-  },
-  {
-    icon: <FaServer />,
-    title: "Java Enterprise Development",
-    desc: "Our team has deployed professional solutions using Enterprise Java Beans (EJB), Java Message Service (JMS), Java Persistence API (JPA), and more."
-  },
-  {
-    icon: <FaMobileAlt />,
-    title: "Java Desktop & Mobile Applications",
-    desc: "We build applications using modern frameworks, modules, widgets and J2EE verticals delivering unique app solutions."
-  },
-  {
-    icon: <FaCloud />,
-    title: "Cloud-based Platforms",
-    desc: "We design containerized apps running on cloud microservices architecture helping organizations transform digitally."
-  },
-  {
-    icon: <FaExchangeAlt />,
-    title: "Migrations and Integrations",
-    desc: "We handle database migration, UI migration, application porting and Java upgrades ensuring flawless transition."
-  },
-  {
-    icon: <FaUserTie />,
-    title: "Java Consulting",
-    desc: "From development to implementation and maintenance, we assist in delivering the most effective Java solutions."
-  }
-];
+import { useParams } from "react-router-dom";
+import services from "../../data/servicesData";
 
 export default function WhatWeDo() {
+  const { slug } = useParams();
+
+  const service = services.find((item) => item.slug === slug);
+
+  if (!service) {
+    return <h2>Service not found</h2>;
+  }
+
+  // Because your data structure is inconsistent
+  const data = service.whatwedo || service.benefits;
+
+  if (!data) {
+    return null;
+  }
+
   return (
     <section className="whatwedo">
-      <h2 className="section-title">What We do</h2>
+      <h2 className="section-title">What We Do</h2>
 
       <div className="cards-wrapper">
-        {services.map((item, index) => (
-          <div className="service-card" key={index}>
-            <div className="icon-box">{item.icon}</div>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
+
+        {data[0] && (
+          <div className="service-card">
+            <h3>{data[0].title}</h3>
+            <p>{data[0].description}</p>
           </div>
-        ))}
+        )}
+
+        {data[1] && (
+          <div className="service-card">
+            <h3>{data[1].title}</h3>
+            <p>{data[1].description}</p>
+          </div>
+        )}
+
+        {data[2] && (
+          <div className="service-card">
+            <h3>{data[2].title}</h3>
+            <p>{data[2].description}</p>
+          </div>
+        )}
+        {data[3] && (
+          <div className="service-card">
+            <h3>{data[2].title}</h3>
+            <p>{data[2].description}</p>
+          </div>
+        )}
+        {data[4] && (
+          <div className="service-card">
+            <h3>{data[2].title}</h3>
+            <p>{data[2].description}</p>
+          </div>
+        )}
+        {data[5] && (
+          <div className="service-card">
+            <h3>{data[2].title}</h3>
+            <p>{data[2].description}</p>
+          </div>
+        )}
+
       </div>
     </section>
   );

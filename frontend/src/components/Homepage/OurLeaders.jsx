@@ -46,12 +46,12 @@ const teamMembers = [
 const interns = [
   {
     name: "Nikhil Patel",
-    role: "Full-Stack Developer",
+    role: "Full-Stack Developer Intern",
     img: nikhil,
   },
   {
     name: "Mandora Manmeetsinh",
-    role: "Full-Stack Developer",
+    role: "Full-Stack Developer Intern",
     img: manmeet,
   },
 ];

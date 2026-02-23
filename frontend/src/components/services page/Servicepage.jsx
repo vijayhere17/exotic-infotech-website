@@ -14,7 +14,6 @@ const Servicepage = ({ service }) => {
         background: "#f8f9fb",
       }}
     >
-      {/* LEFT CONTENT */}
       <div style={{ flex: 1 }}>
         <h1
           style={{
@@ -50,7 +49,6 @@ const Servicepage = ({ service }) => {
         </button>
       </div>
 
-      {/* RIGHT IMAGE */}
       <div style={{ flex: 1, textAlign: "center" }}>
         <img
           src={service.hero.image}

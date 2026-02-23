@@ -1,13 +1,14 @@
 import ContactSection from "../components/AboutUs/ContactSection";
-import ConsultSection from "../components/ContactUs/ConsultSection";
+import CounterSection from "../components/Homepage/CounterSection";
+import ContactColumnSection from "../components/ContactUs/ContactColumnSection";
+import BookAnAppointment from "../components/ContactUs/BookAnAppointment";
 
 function Contact() {
   return (
-    <div style={{ padding: "100px 40px" }}>
-      <h1>Contact Us</h1>
-      <p>Get in touch with us.</p>
+    <div style={{  }}>
       <ContactSection />  
-      <ConsultSection />
+      <ContactColumnSection />
+      <BookAnAppointment />
     </div>
   );
 }

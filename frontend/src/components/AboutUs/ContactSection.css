@@ -16,19 +16,32 @@
   padding: 50px;
   border-radius: 24px;
   color: #fff;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 20% 20%,
-      rgba(14,165,233,0.15),
+      rgba(14, 165, 233, 0.15),
       transparent 40%
     ),
     radial-gradient(
       circle at 80% 80%,
-      rgba(132,204,22,0.12),
+      rgba(132, 204, 22, 0.12),
       transparent 40%
     ),
     linear-gradient(135deg, #09172c, #0e1f3d);
 }
 
+.contact-map {
+  height: 585;
+  width: 100;
+  margin: 1px 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map iframe {
+  border-radius: 20px;
+}
 .contact-form-card h3 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -46,6 +59,46 @@
   gap: 20px;
 }
 
+.location-info {
+  background: #f5f6f8;
+  padding: 40px;
+  max-width: 500px;
+  font-family: Arial, sans-serif;
+}
+
+.location-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #1f2d3d;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.info-icon {
+  font-size: 22px;
+  color: #2f55a4;
+  margin-top: 4px;
+  min-width: 22px;
+}
+
+.info-row h4 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+
+.info-row p {
+  font-size: 16px;
+  color: #6c7a89;
+  line-height: 1.6;
+  margin: 0;
+}
 .form-row {
   display: flex;
   gap: 20px;
@@ -108,10 +161,11 @@
   margin-bottom: 20px;
 }
 
-.contact-info h2 {
+.contact-header h2 {
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 40px;
+  margin-left: 250px;
   background: linear-gradient(150deg, #0ea5e9, #84cc16);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

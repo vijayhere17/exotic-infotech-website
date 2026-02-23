@@ -11,7 +11,6 @@ export default function WhatWeDo() {
     return <h2>Service not found</h2>;
   }
 
-  // Because your data structure is inconsistent
   const data = service.whatwedo || service.benefits;
 
   if (!data) {
@@ -23,7 +22,6 @@ export default function WhatWeDo() {
       <h2 className="section-title">What We Do</h2>
 
       <div className="cards-wrapper">
-
         {data[0] && (
           <div className="service-card">
             <h3>{data[0].title}</h3>
@@ -62,7 +60,6 @@ export default function WhatWeDo() {
             <p>{data[2].description}</p>
           </div>
         )}
-
       </div>
     </section>
   );

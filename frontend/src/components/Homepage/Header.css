@@ -1,5 +1,5 @@
 .header {
-  background: #ffffff;
+  background: #f8fafc;
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -63,7 +63,7 @@
   bottom: -8px;
   width: 0%;
   height: 3px;
-  background: linear-gradient(90deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
   transition: 0.3s ease;
 }
 
@@ -74,8 +74,6 @@
 .nav-link:hover {
   color: #0ea5e9;
 }
-
-
 
 .mega-menu {
   display: none; 
@@ -129,7 +127,7 @@
 }
 
 .mega-grid a:hover {
-  color: #84cc16;
+  color: #0d5b96;
   transform: translateX(4px);
 }
 
@@ -138,7 +136,7 @@
   padding: 14px 32px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(90deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
   color: #ffffff;
   font-size: 16px;
   font-weight: 600;

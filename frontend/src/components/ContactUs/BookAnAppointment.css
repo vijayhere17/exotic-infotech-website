@@ -3,7 +3,6 @@
   background: #f5f6f8;
 }
 
-/* ================== MAIN BOX ================== */
 .book-box {
   background: #cfd5e3;
   border-radius: 20px;
@@ -14,7 +13,6 @@
   gap: 40px;
 }
 
-/* ================== CONTENT ================== */
 .book-content h2 {
   font-size: 34px;
   font-weight: 600;
@@ -23,7 +21,6 @@
   margin: 0;
 }
 
-/* ================== ACTION AREA ================== */
 .book-action {
   display: flex;
   align-items: center;
@@ -35,7 +32,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #3f51b5, #2f3e9e);
+  background: #0d5b96;
   color: #ffffff;
   padding: 25px 32px;
   border-radius: 14px;
@@ -81,7 +78,7 @@
 }
 
 .book-contact-icon {
-  color: #3b5fa8;
+  color: #0d5b96;
   font-size: 20px;
 }
 

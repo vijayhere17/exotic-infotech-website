@@ -53,14 +53,6 @@ export default function ContactSection() {
               loading="lazy"
             ></iframe>
           </div>
-
-          
-          
-          {/* <div className="contact-bottom">
-            <span>+91 8511624907</span>
-            <span>Book an Appointment</span>
-            <span>Info@exoticinfo.com</span>
-          </div> */}
         </div>
       </div>
     </section>

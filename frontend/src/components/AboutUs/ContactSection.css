@@ -82,7 +82,7 @@
 
 .info-icon {
   font-size: 22px;
-  color: #2f55a4;
+  color: #0d5b96;
   margin-top: 4px;
   min-width: 22px;
 }
@@ -131,8 +131,6 @@
   padding: 14px;
   border: none;
   border-radius: 20px;
-  background: linear-gradient(150deg, #0ea5e9, #84cc16);
-  color: #fff;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -141,24 +139,13 @@
   margin-left: 180px;
 }
 
-.contact-form-card button:hover {
-  background: #84cc16;
+.contact-form-card button {
+  background-color: #bdcede;
+  color: #1e293b;
 }
 
 .contact-info {
   flex: 1;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #ffe7d6;
-  color: #ff7a00;
-  padding: 8px 16px;
-  border-radius: 30px;
-  font-size: 14px;
-  margin-bottom: 20px;
 }
 
 .contact-header h2 {
@@ -166,7 +153,7 @@
   font-weight: 700;
   margin-bottom: 40px;
   margin-left: 250px;
-  background: linear-gradient(150deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -221,7 +208,7 @@
 
 .bottom-icon.blue {
   background: #dbeafe;
-  color: #2563eb;
+  color: #0d5b96;
 }
 
 .bottom-icon.orange {

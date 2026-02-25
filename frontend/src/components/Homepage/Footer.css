@@ -1,19 +1,11 @@
 .footer {
-  background: radial-gradient(
-      circle at 20% 20%,
-      rgba(14,165,233,0.15),
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at 80% 80%,
-      rgba(132,204,22,0.12),
-      transparent 40%
-    ),
-    linear-gradient(135deg, #09172c, #0e1f3d);
-  color: #cbd5e1;
+  .footer {
+  background: #f8fafc;
+  position: relative;  
+  z-index: 1;          
   font-family: "Poppins", sans-serif;
 }
-
+}
 
 .footer-main {
   padding: 90px 40px 70px;
@@ -27,27 +19,24 @@
   gap: 70px;
 }
 
-
 .footer-logo {
-  width: 250px;
-  
+  width: 300px;
   margin-bottom: 25px;
 }
 
 .footer-brand p {
   line-height: 1.8;
   font-size: 14px;
-  color: #9fb3c8;
+  color: #1e293b;
   margin-bottom: 30px;
   max-width: 340px;
 }
-
 
 .footer-col h4 {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 35px;
-  color: #ffffff;
+  color: #1e293b;
   position: relative;
 }
 
@@ -59,9 +48,8 @@
   width: 40px;
   height: 3px;
   border-radius: 3px;
-  background: linear-gradient(90deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
 }
-
 
 .footer-col ul {
   list-style: none;
@@ -72,38 +60,36 @@
 .footer-col ul li {
   margin-bottom: 12px;
   font-size: 15px;
-  color: #9fb3c8;
+  color: #1e293b;
   transition: 0.3s ease;
 }
 
 .footer-col ul li a {
   text-decoration: none;
-  color: #9fb3c8;
+  color: #1e293b;
   transition: 0.3s ease;
 }
 
-.footer-col ul li:hover {
+/* .footer-col ul li:hover {
   transform: translateX(5px);
 }
 
 .footer-col ul li a:hover {
   color: #84cc16;
-}
-
+} */
 
 .contact-item {
   display: flex;
   gap: 12px;
   margin-bottom: 18px;
   font-size: 15px;
-  color: #9fb3c8;
+  color: #1e293b;
 }
 
 .contact-item svg {
   color: #0ea5e9;
   margin-top: 3px;
 }
-
 
 .footer-social {
   display: flex;
@@ -114,31 +100,29 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.06);
+  background: rgba(255, 255, 255, 0.06);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #cbd5e1;
+  color: #1e293b;
   transition: 0.3s ease;
 }
 
 .footer-social a:hover {
-  background: linear-gradient(90deg, #0ea5e9, #84cc16);
-  color: #ffffff;
+  background: #bdcede;
+  color: #1e293b;
   transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(14,165,233,0.3);
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.3);
 }
-
 
 .footer-bottom {
   text-align: center;
   padding: 22px;
   font-size: 13px;
   color: #7f94aa;
-  background: rgba(0,0,0,0.3);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
-
 
 @media (max-width: 1100px) {
   .footer-grid {

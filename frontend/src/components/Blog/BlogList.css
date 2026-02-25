@@ -6,7 +6,6 @@
   gap: 30px;
 }
 
-/* Card */
 .blog-card {
   display: flex;
   gap: 30px;
@@ -21,7 +20,6 @@
   transform: translateY(-5px);
 }
 
-/* Image */
 .blog-image img {
   width: 350px;
   height: 200px;
@@ -29,7 +27,6 @@
   border-radius: 8px;
 }
 
-/* Content */
 .blog-content {
   flex: 1;
   display: flex;

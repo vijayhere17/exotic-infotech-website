@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/exoticlogo.png";
+import logo from "../../assets/images/companylogo.png";
 import {
   Linkedin,
   X,
@@ -94,11 +94,11 @@ const Footer = () => {
             <h4>Contact</h4>
             <div className="contact-item">
               <Mail size={16} />
-              <span>Info@exoticinfo.com</span>
+              <span>Info@exoticinfotech.com</span>
             </div>
             <div className="contact-item">
               <Mail size={16} />
-              <span>ridhi.rana@exoticinfotech.com</span>
+              <span>riddhi.rana@exoticinfotech.com</span>
             </div>
             <div className="contact-item">
               <Phone size={16} />

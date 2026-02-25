@@ -5,10 +5,11 @@ import Header from "./components/Homepage/Header";
 import Footer from "./components/Homepage/Footer";
 import Footersection from "./components/Homepage/FooterSection";
 import ServiceDetails from "./pages/ServiceDetails";
-
+import Services from "./pages/Services";
+import Technology from "./pages/Technology";
 import Homepage from "./pages/Homepage";
 import Company from "./pages/aboutuspage";
-import Design from "./pages/Portfolio";
+import Design from "./pages/Design";
 import Blog from "./pages/Blog";
 import Industries from "./pages/Industries";
 import Contact from "./pages/Contact";
@@ -26,7 +27,9 @@ function App() {
         <Route path="/design" element={<Design />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/industries" element={<Industries />} />
+        <Route path="/technology" element={<Technology />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/services/:slug" element={<ServiceDetails />} />
 
         <Route path="*" element={<div>404 Page Not Found</div>} />

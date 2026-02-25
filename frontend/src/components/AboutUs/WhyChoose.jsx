@@ -3,7 +3,6 @@ import "./WhyChoose.css";
 import { FaCheck } from "react-icons/fa";
 import image from "../../assets/exoticphotos/img3.jpeg";
 
-// Replace with your actual image path
 
 const points = [
   
@@ -37,7 +36,6 @@ export default function WhyChoose() {
             <img src={image} alt="Developer Illustration" />
           </div>
 
-          
           <div className="why-points">
             {points.map((item, index) => (
               <div key={index} className="why-item">

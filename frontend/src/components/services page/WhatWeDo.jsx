@@ -11,9 +11,9 @@ export default function WhatWeDo() {
     return <h2>Service not found</h2>;
   }
 
-  const data = service.whatwedo || service.benefits;
+  const data = service.benefits;
 
-  if (!data) {
+  if (!data || data.length === 0) {
     return null;
   }
 
@@ -22,44 +22,12 @@ export default function WhatWeDo() {
       <h2 className="section-title">What We Do</h2>
 
       <div className="cards-wrapper">
-        {data[0] && (
-          <div className="service-card">
-            <h3>{data[0].title}</h3>
-            <p>{data[0].description}</p>
+        {data.map((item, index) => (
+          <div key={index} className="service-card">
+            <h3>{item.title}</h3>
+            <p>{item.description}</p>
           </div>
-        )}
-
-        {data[1] && (
-          <div className="service-card">
-            <h3>{data[1].title}</h3>
-            <p>{data[1].description}</p>
-          </div>
-        )}
-
-        {data[2] && (
-          <div className="service-card">
-            <h3>{data[2].title}</h3>
-            <p>{data[2].description}</p>
-          </div>
-        )}
-        {data[3] && (
-          <div className="service-card">
-            <h3>{data[2].title}</h3>
-            <p>{data[2].description}</p>
-          </div>
-        )}
-        {data[4] && (
-          <div className="service-card">
-            <h3>{data[2].title}</h3>
-            <p>{data[2].description}</p>
-          </div>
-        )}
-        {data[5] && (
-          <div className="service-card">
-            <h3>{data[2].title}</h3>
-            <p>{data[2].description}</p>
-          </div>
-        )}
+        ))}
       </div>
     </section>
   );

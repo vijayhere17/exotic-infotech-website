@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import "./Hero.css";
-import video from "../../assets/exoticvideo.mp4";
+import video from "../../assets/exoticvideo1.mp4";
 
 const texts = [
+  "Serving Businesses Across Europe & Asia",
   "Bespoke Website Development",
   "Custom Software Solutions",
   "Seamless User Experiences",
   "Scalable Cloud Infrastructure",
-  "AI-Powered Applications"
+  "AI-Powered Applications",
 ];
 
 const Hero = () => {
@@ -24,54 +25,41 @@ const Hero = () => {
 
   return (
     <section className="hero-container">
-
-    
-      <video
-        className="hero-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
+      <video className="hero-video" autoPlay loop muted playsInline>
         <source src={video} type="video/mp4" />
       </video>
 
-      {/* Dark Overlay */}
       <div className="hero-overlay"></div>
 
-      {/* Content */}
       <div className="hero-content">
-
         <h4 className="subtitle">EMPOWERING YOUR</h4>
 
         <div className="flip-wrapper">
-         <AnimatePresence mode="wait">
-  <motion.h1
-    key={index}
-    data-text={texts[index]}  
-    initial={{ y: 60, opacity: 0 }}
-    animate={{ y: 0, opacity: 1 }}
-    exit={{ y: -60, opacity: 0 }}
-    transition={{ duration: 0.6 }}
-    className="flip-text"
-  >
-    {texts[index]}
-  </motion.h1>
-</AnimatePresence>
-
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={index}
+              data-text={texts[index]}
+              initial={{ y: 60, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -60, opacity: 0 }}
+              transition={{ duration: 0.6 }}
+              className="flip-text"
+            >
+              {texts[index]}
+            </motion.h1>
+          </AnimatePresence>
         </div>
 
         <p className="hero-description">
-          We deliver advanced website development, custom software engineering
-          solutions that empower businesses to innovate, optimize performance,
-          and accelerate sustainable growth in a competitive digital landscape.
+          We support companies in Europe, India, and other international markets
+          with structured development processes, clear communication, and
+          scalable technology solutions.
         </p>
 
         <button className="cta-btn">
           Let’s Connect
           <ArrowRight className="arrow-icon" size={18} />
         </button>
-
       </div>
     </section>
   );

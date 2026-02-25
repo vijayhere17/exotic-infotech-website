@@ -1,9 +1,10 @@
 import {
-  ClipboardList,
+  ClipboardCheck,
+  Search,
   Palette,
   Code2,
   Rocket,
-  Settings
+  Settings,
 } from "lucide-react";
 
 import "./ApproachSection.css";
@@ -11,42 +12,52 @@ import "./ApproachSection.css";
 const steps = [
   {
     num: "01",
-    title: "Requirement Understanding",
-    desc: "Once you have dropped an inquiry, we take a call with you and understand your requirements for your project. We discuss your project goals and strategic direction.",
+    title: "Built for European Business Standards",
+    desc: [
+      "Clear documentation before development,Dedicated project manager,Defined milestones & timelines,Secure architecture planning,Long-term technical support.",
+    ],
     color: "blue-soft",
     side: "right",
-    icon: ClipboardList,
+    icon: ClipboardCheck,
   },
   {
     num: "02",
-    title: "Design and Prototyping",
-    desc: "Our UI/UX team designs visually compelling interfaces and prototypes that ensure seamless user experiences and engagement.",
-    color: "green-soft",
+    title: "Requirement Understanding",
+    desc: "Once you drop an inquiry, we schedule a call to deeply understand your goals, requirements, and strategic direction.",
+    color: "blue-light",
     side: "left",
-    icon: Palette,
+    icon: Search,
   },
   {
     num: "03",
-    title: "Development & Quality Assurance",
-    desc: "We build scalable web and mobile applications using modern technologies while ensuring high performance and reliability.",
+    title: "Design and Prototyping",
+    desc: "Our UI/UX team creates visually compelling interfaces and interactive prototypes to ensure seamless user experiences.",
     color: "blue-soft",
     side: "right",
-    icon: Code2,
+    icon: Palette,
   },
   {
     num: "04",
-    title: "Deployment",
-    desc: "We deploy your application securely to production environments and ensure smooth performance across all platforms.",
-    color: "green-soft",
+    title: "Development & Quality Assurance",
+    desc: "We build scalable web and mobile applications using modern technologies while ensuring performance, security, and reliability.",
+    color: "blue-light",
     side: "left",
-    icon: Rocket,
+    icon: Code2,
   },
   {
     num: "05",
-    title: "Maintenance & Upgrades",
-    desc: "We provide ongoing support, updates, and feature enhancements to keep your product competitive and future-ready.",
+    title: "Deployment",
+    desc: "We deploy your application securely to production environments and ensure smooth performance across all platforms.",
     color: "blue-soft",
     side: "right",
+    icon: Rocket,
+  },
+  {
+    num: "06",
+    title: "Maintenance & Upgrades",
+    desc: "We provide ongoing support, updates, and feature enhancements to keep your product competitive and future-ready.",
+    color: "blue-light",
+    side: "left",
     icon: Settings,
   },
 ];
@@ -55,12 +66,18 @@ export default function ApproachSection() {
   return (
     <section className="approach">
       <div className="homebadge">Why Choose Exotic Infotech?</div>
-      <div className="hometitle">Exotic Infotech is your strategic partner for cutting-edge digital solutions. We specialize in end-to-end Web Development, robust Software Development, and innovative Mobile Application Development. We bring all your digital needs under one roof.</div>
-      
+
+      <div className="hometitle">
+        Exotic Infotech is your strategic partner for cutting-edge digital
+        solutions. We specialize in end-to-end Web Development, robust Software
+        Development, and innovative Mobile Application Development — bringing
+        all your digital needs under one roof.
+      </div>
 
       <div className="homeapproach-list">
         {steps.map((step, i) => {
           const Icon = step.icon;
+
           return (
             <div key={i} className={`homerow ${step.side}`}>
               <div className={`homecard ${step.color}`}>
@@ -72,11 +89,18 @@ export default function ApproachSection() {
 
                 <div className="homecontent">
                   <h3>{step.title}</h3>
-                  <p>{step.desc}</p>
+
+                  {Array.isArray(step.desc) ? (
+                    <ul>
+                      {step.desc.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p>{step.desc}</p>
+                  )}
                 </div>
               </div>
-
-            
             </div>
           );
         })}

@@ -63,12 +63,10 @@
   margin: 0;
 }
 
-/* Hover effect */
 .faq-item:hover {
   border-color: #ff6a00;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .faq-section {
     padding: 60px 20px;

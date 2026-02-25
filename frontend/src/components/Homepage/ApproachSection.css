@@ -10,7 +10,7 @@
 .homebadge {
   font-size: 60px;
   font-weight: 800;
-  background: linear-gradient(90deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
@@ -22,8 +22,6 @@
   font-size: 16px;
   color: #333;
 }
-
-
 
 .homeapproach-list {
   max-width: 1300px;
@@ -80,20 +78,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0ea5e9;
+  color: #0d5b96;
   transition: 0.3s ease;
   flex-shrink: 0;
 }
 
 .homecard:hover .icon {
-  border-color: #84cc16;
-  color: #84cc16;
+  border-color: #0d5b96;
+  color: #0d5b96;
 }
 
 .number {
   font-size: 34px;
   font-weight: 700;
-  color: #0ea5e9;
+  color: #0d5b96;
   min-width: 70px;
 }
 
@@ -147,7 +145,7 @@
 .floating-box {
   width: 200px;
   height: 200px;
-  border: 3px solid #0ea5e9;
+  border: 3px solid #0d5b96;
   border-radius: 24px;
   transform: rotate(15deg);
 }
@@ -155,7 +153,7 @@
 .floating-box.small {
   width: 140px;
   height: 140px;
-  border-color: #84cc16;
+  border-color: #0d5b96;
   margin-top: 40px;
   transform: rotate(-12deg);
 }

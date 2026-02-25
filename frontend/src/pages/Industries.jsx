@@ -1,8 +1,11 @@
+import IndustriesSection from "../components/Homepage/IndustriesSection";
+import ContactSection from "../components/Aboutus/ContactSection";
+
 function Industries() {
   return (
-    <div style={{ padding: "100px 40px" }}>
-      <h1>Industries</h1>
-      <p>Industries we serve.</p>
+    <div style={{ }}>
+      <IndustriesSection />
+      <ContactSection />
     </div>
   );
 }

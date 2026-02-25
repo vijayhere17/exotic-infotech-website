@@ -41,15 +41,12 @@ const Header = () => {
                 Company
               </Link>
             </li>
-
-           
             <li
               className="nav-item"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
              <button className="nav-link">Services</button>
-
 
               <div className={`mega-menu ${servicesOpen ? "show" : ""}`}>
                 <div className="mega-grid">
@@ -151,30 +148,18 @@ const Header = () => {
               </Link>
             </li>
 
-         
             <li className="nav-item">
               <Link to="/blog" className="nav-link">
                 Blog
               </Link>
             </li>
 
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-
-      
-
-           
-           
             <li>
               <Link to="/contact">
                 <button className="contact-btn">Let's Connect</button>
               </Link>
             </li>
-
-            
+ 
           </ul>
         </nav>
       </div>

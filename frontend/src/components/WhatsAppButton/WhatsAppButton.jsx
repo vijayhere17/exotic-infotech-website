@@ -23,9 +23,9 @@ const WhatsAppButton = () => {
       >
         <defs>
           <radialGradient id="premiumGreen" cx="30%" cy="30%" r="70%">
-            <stop offset="0%" stopColor="#4afc9b" />
-            <stop offset="60%" stopColor="#25D366" />
-            <stop offset="100%" stopColor="#128C7E" />
+            <stop offset="0%" stopColor="#0d5b96" />
+            <stop offset="60%" stopColor="#0d5b96" />
+            <stop offset="100%" stopColor="#0d5b96" />
           </radialGradient>
 
           <linearGradient id="innerShine" x1="0%" y1="0%" x2="100%" y2="100%">

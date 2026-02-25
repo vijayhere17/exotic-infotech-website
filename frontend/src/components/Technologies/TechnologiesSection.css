@@ -1,0 +1,88 @@
+.tech-section {
+  padding: 80px 5%;
+  text-align: center;
+  background: #f9fbff;
+}
+
+.tech-section h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: #0d5b96;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tech-tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.tech-tab {
+  padding: 10px 20px;
+  border: none;
+  background: #eaeefb;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tech-tab.active {
+  background: #0d5b96;
+  color: #fff;
+}
+
+.slider-container {
+  overflow: hidden;
+  position: relative;
+}
+
+}
+
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
+}
+
+.tech-card {
+  min-width: 180px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.tech-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.tech-card p {
+  font-weight: 600;
+}
+
+.slider-track {
+  display: flex;
+  gap: 25px;
+  width: max-content;
+  animation: scroll linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .tech-card {
+    min-width: 140px;
+  }
+}

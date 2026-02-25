@@ -59,7 +59,7 @@
   font-size: 80px;
   font-weight: 700;
   line-height: 1.2;
-  background: linear-gradient(150deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   z-index: 1;           
@@ -93,7 +93,7 @@
   padding: 15px 40px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(90deg, #0ea5e9, #84cc16);
+  background: #0d5b96;
   color: white;
   font-size: 16px;
   font-weight: 600;

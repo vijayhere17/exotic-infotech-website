@@ -1,5 +1,16 @@
 .footerbar {
-  background: linear-gradient(50deg, #0ea5e9, #84cc16);
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(14,165,233,0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(132,204,22,0.12),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #09172c, #0e1f3d);
+  color: #cbd5e1;
   padding: 12px 40px;
   font-family: Arial, sans-serif;
   font-size: 14px;

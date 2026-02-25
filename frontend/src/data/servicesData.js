@@ -1,127 +1,310 @@
 
-import java from "../assets/images/java.jpg";
-import React from "../assets/images/react.png";
-
 const services = [
+  {
+    slug: "laravel",
+    themeColor: "#FF2D20",
+    hero: {
+      tagline: "Elegant PHP Framework",
+      title: "Laravel Development",
+      description: "Build modern, scalable web applications with Laravel.",
+      image: "https://laravel.com/img/logomark.min.svg",
+    },
+    benefits: [
+      { title: "Rapid Development", description: "Fast and efficient coding." },
+      { title: "Secure", description: "Built-in security features." },
+      { title: "Scalable", description: "Handles growing applications." },
+    ],
+    offerings: ["Web Applications", "API Development", "E-commerce Platforms", "CMS"],
+    techStack: ["Laravel", "PHP", "MySQL", "Composer"],
+  },
   {
     slug: "java",
     themeColor: "#f89820",
-
     hero: {
-      tagline: "We Build Solutions. We Deliver.",
+      tagline: "Enterprise Solutions",
       title: "Java Development",
-      description:
-        "We provide enterprise-grade Java applications, scalable backend systems, and secure business solutions using modern Java technologies.",
-      image: java,
+      description: "Build robust, scalable enterprise applications with Java technologies.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     },
-
     benefits: [
-      {
-        title: "Enterprise Ready",
-        description: "Robust architecture for large-scale systems.",
-      },
-      {
-        title: "Highly Secure",
-        description: "Advanced security implementation for enterprise apps.",
-      },
-      {
-        title: "Scalable",
-        description: "Handles high traffic and complex operations.",
-      },
-            {
-
-        title: "Enterprise Ready",
-
-        description: "Robust architecture for large-scale systems.",
-
-      },
-
-      {
-
-        title: "Highly Secure",
-
-        description: "Advanced security implementation for enterprise apps.",
-
-      },
-
-      {
-
-        title: "Scalable",
-
-        description: "Handles high traffic and complex operations.",
-
-      },
-
+      { title: "Enterprise Ready", description: "Scalable for large-scale systems." },
+      { title: "Secure", description: "Advanced security features." },
+      { title: "Cross-Platform", description: "Runs on any platform." },
     ],
-
-    offerings: [
-      "Custom Java Applications",
-      "Spring Boot Development",
-      "Microservices Architecture",
-      "API Development",
-      "Migration & Modernization",
-    ],
-
-    techStack: [
-      "Java",
-      "Spring Boot",
-      "Hibernate",
-      "Kafka",
-      "MySQL",
-    ],
+    offerings: ["Spring Boot Apps", "Microservices", "API Development", "Legacy Migration"],
+    techStack: ["Java", "Spring", "Hibernate", "Maven"],
   },
-
+  {
+    slug: "php",
+    themeColor: "#777bb4",
+    hero: {
+      tagline: "Dynamic Web Solutions",
+      title: "PHP Development",
+      description: "Create dynamic websites and applications with PHP.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    },
+    benefits: [
+      { title: "Cost-Effective", description: "Affordable development." },
+      { title: "Flexible", description: "Easy to integrate." },
+      { title: "Fast", description: "Quick execution." },
+    ],
+    offerings: ["Custom PHP Apps", "CMS Development", "E-commerce Sites", "API Integration"],
+    techStack: ["PHP", "Laravel", "Symfony", "MySQL"],
+  },
+  {
+    slug: "html5",
+    themeColor: "#e34f26",
+    hero: {
+      tagline: "Modern Web Standards",
+      title: "HTML5 Development",
+      description: "Build responsive and interactive web pages with HTML5.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    },
+    benefits: [
+      { title: "Responsive", description: "Works on all devices." },
+      { title: "Accessible", description: "User-friendly." },
+      { title: "SEO Friendly", description: "Better search rankings." },
+    ],
+    offerings: ["Responsive Websites", "Web Apps", "Multimedia Integration", "Progressive Web Apps"],
+    techStack: ["HTML5", "CSS3", "JavaScript", "Canvas"],
+  },
   {
     slug: "react",
     themeColor: "#61dafb",
-
     hero: {
-      tagline: "Modern UI. Fast Performance.",
+      tagline: "Interactive UIs",
       title: "React Development",
-      description:
-        "We build modern, high-performance web applications using React with scalable frontend architecture.",
-      image: React,
+      description: "Develop fast, scalable user interfaces with React.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
-
-    whatwedo: [
-      {
-        title: "Fast Performance",
-        description: "React lets you build user interfaces out of individual pieces called components.",
-      },
-      {
-        title: "Reusable Components",
-        description: "Efficient development using modular components.",
-      },
-      {
-        title: "SEO Friendly",
-        description: "Optimized architecture for better ranking.",
-      },
-      {
-        title: "Fast Performance",
-        description: "React lets you build user interfaces out of individual pieces called components.",
-      },
-      {
-        title: "Reusable Components",
-        description: "Efficient development using modular components.",
-      },
-      
+    benefits: [
+      { title: "Component-Based", description: "Reusable components." },
+      { title: "Performance", description: "Virtual DOM for speed." },
+      { title: "Ecosystem", description: "Rich library support." },
     ],
-
-    offerings: [
-      "Custom React Web Apps",
-      "SPA Development",
-      "Next.js Development",
-      "UI/UX Implementation",
-      "Frontend Optimization",
+    offerings: ["SPA Development", "React Apps", "UI Components", "State Management"],
+    techStack: ["React", "Redux", "Next.js", "TypeScript"],
+  },
+  {
+    slug: "angular",
+    themeColor: "#dd0031",
+    hero: {
+      tagline: "Full-Featured Framework",
+      title: "Angular Development",
+      description: "Build complex web applications with Angular.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+    },
+    benefits: [
+      { title: "MVC Architecture", description: "Structured development." },
+      { title: "Two-Way Binding", description: "Real-time updates." },
+      { title: "TypeScript", description: "Type safety." },
     ],
-
-    techStack: [
-      "React",
-      "Next.js",
-      "Redux",
-      "Tailwind",
-      "Node.js",
+    offerings: ["Angular Apps", "Enterprise Solutions", "Progressive Web Apps", "Testing"],
+    techStack: ["Angular", "TypeScript", "RxJS", "NgRx"],
+  },
+  {
+    slug: "node",
+    themeColor: "#339933",
+    hero: {
+      tagline: "Server-Side JavaScript",
+      title: "Node.js Development",
+      description: "Create scalable server-side applications with Node.js.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    benefits: [
+      { title: "Non-Blocking", description: "Asynchronous I/O." },
+      { title: "Scalable", description: "Handles high traffic." },
+      { title: "JavaScript", description: "Unified language." },
     ],
+    offerings: ["API Development", "Real-Time Apps", "Microservices", "Server Management"],
+    techStack: ["Node.js", "Express", "MongoDB", "Socket.io"],
+  },
+  {
+    slug: "wordpress",
+    themeColor: "#21759b",
+    hero: {
+      tagline: "Content Management",
+      title: "WordPress Development",
+      description: "Build websites and blogs with WordPress.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+    },
+    benefits: [
+      { title: "User-Friendly", description: "Easy to manage." },
+      { title: "Customizable", description: "Themes and plugins." },
+      { title: "SEO Optimized", description: "Built-in SEO." },
+    ],
+    offerings: ["Custom Themes", "Plugin Development", "E-commerce Sites", "Maintenance"],
+    techStack: ["WordPress", "PHP", "MySQL", "WooCommerce"],
+  },
+  {
+    slug: "magento",
+    themeColor: "#f26322",
+    hero: {
+      tagline: "E-commerce Powerhouse",
+      title: "Magento Development",
+      description: "Develop robust e-commerce platforms with Magento.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
+    },
+    benefits: [
+      { title: "Scalable", description: "Grows with business." },
+      { title: "Flexible", description: "Customizable features." },
+      { title: "Secure", description: "Payment integrations." },
+    ],
+    offerings: ["E-commerce Sites", "Custom Modules", "Integration", "Migration"],
+    techStack: ["Magento", "PHP", "MySQL", "Redis"],
+  },
+  {
+    slug: "shopify",
+    themeColor: "#96bf48",
+    hero: {
+      tagline: "Easy E-commerce",
+      title: "Shopify Development",
+      description: "Create online stores quickly with Shopify.",
+      image: "https://cdn.simpleicons.org/shopify",
+    },
+    benefits: [
+      { title: "Quick Setup", description: "Launch fast." },
+      { title: "Themes", description: "Beautiful designs." },
+      { title: "Apps", description: "Extend functionality." },
+    ],
+    offerings: ["Store Setup", "Custom Themes", "App Development", "Integration"],
+    techStack: ["Shopify", "Liquid", "JavaScript", "GraphQL"],
+  },
+  {
+    slug: "react-native",
+    themeColor: "#61dafb",
+    hero: {
+      tagline: "Cross-Platform Mobile",
+      title: "React Native Development",
+      description: "Build mobile apps for iOS and Android with React Native.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    },
+    benefits: [
+      { title: "Cross-Platform", description: "One codebase." },
+      { title: "Native Performance", description: "Near-native speed." },
+      { title: "Reusable", description: "React components." },
+    ],
+    offerings: ["Mobile Apps", "UI Development", "API Integration", "Deployment"],
+    techStack: ["React Native", "Expo", "Redux", "Firebase"],
+  },
+  {
+    slug: "ios",
+    themeColor: "#000000",
+    hero: {
+      tagline: "iOS Excellence",
+      title: "iOS Development",
+      description: "Develop native iOS applications.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
+    },
+    benefits: [
+      { title: "Native", description: "Best performance." },
+      { title: "User Experience", description: "Apple standards." },
+      { title: "Security", description: "Secure apps." },
+    ],
+    offerings: ["iOS Apps", "Swift Development", "App Store", "Maintenance"],
+    techStack: ["Swift", "Xcode", "UIKit", "Core Data"],
+  },
+  {
+    slug: "android",
+    themeColor: "#3ddc84",
+    hero: {
+      tagline: "Android Innovation",
+      title: "Android Development",
+      description: "Build native Android applications.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+    },
+    benefits: [
+      { title: "Market Share", description: "Wide reach." },
+      { title: "Customizable", description: "Flexible UI." },
+      { title: "Integration", description: "Google services." },
+    ],
+    offerings: ["Android Apps", "Kotlin Development", "Play Store", "Updates"],
+    techStack: ["Kotlin", "Android Studio", "Jetpack", "Firebase"],
+  },
+  {
+    slug: "aws",
+    themeColor: "#ff9900",
+    hero: {
+      tagline: "Cloud Computing",
+      title: "AWS Development",
+      description: "Leverage Amazon Web Services for scalable solutions.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+    },
+    benefits: [
+      { title: "Scalable", description: "Auto-scaling." },
+      { title: "Reliable", description: "High uptime." },
+      { title: "Secure", description: "Enterprise security." },
+    ],
+    offerings: ["Cloud Migration", "Serverless", "DevOps", "Monitoring"],
+    techStack: ["AWS", "EC2", "Lambda", "S3"],
+  },
+  {
+    slug: "azure",
+    themeColor: "#0078d4",
+    hero: {
+      tagline: "Microsoft Cloud",
+      title: "Azure Development",
+      description: "Build on Microsoft's cloud platform.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+    },
+    benefits: [
+      { title: "Integration", description: "Microsoft ecosystem." },
+      { title: "AI/ML", description: "Built-in AI." },
+      { title: "Hybrid", description: "On-prem and cloud." },
+    ],
+    offerings: ["Cloud Apps", "AI Services", "DevOps", "Data Analytics"],
+    techStack: ["Azure", "Functions", "Cosmos DB", "Power BI"],
+  },
+  {
+    slug: "google-cloud",
+    themeColor: "#4285f4",
+    hero: {
+      tagline: "Google's Cloud",
+      title: "Google Cloud Development",
+      description: "Utilize Google's cloud infrastructure.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+    },
+    benefits: [
+      { title: "AI/ML", description: "TensorFlow integration." },
+      { title: "Big Data", description: "Data processing." },
+      { title: "Global", description: "Worldwide network." },
+    ],
+    offerings: ["Cloud Apps", "ML Models", "Big Data", "Kubernetes"],
+    techStack: ["Google Cloud", "BigQuery", "Kubernetes", "TensorFlow"],
+  },
+  {
+    slug: "ai",
+    themeColor: "#ff6b35",
+    hero: {
+      tagline: "Intelligent Automation",
+      title: "AI Integration",
+      description: "Incorporate AI into your applications.",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    },
+    benefits: [
+      { title: "Automation", description: "Reduce manual work." },
+      { title: "Insights", description: "Data-driven decisions." },
+      { title: "Personalization", description: "Tailored experiences." },
+    ],
+    offerings: ["Chatbots", "Recommendation Systems", "Image Recognition", "Predictive Analytics"],
+    techStack: ["Python", "TensorFlow", "PyTorch", "OpenAI"],
+  },
+  {
+    slug: "blockchain",
+    themeColor: "#121d33",
+    hero: {
+      tagline: "Decentralized Solutions",
+      title: "Blockchain Development",
+      description: "Build secure, transparent applications with blockchain.",
+      image: "https://cdn.simpleicons.org/blockchaindotcom",
+    },
+    benefits: [
+      { title: "Security", description: "Immutable records." },
+      { title: "Transparency", description: "Open ledger." },
+      { title: "Decentralized", description: "No central control." },
+    ],
+    offerings: ["Smart Contracts", "DApps", "Cryptocurrency", "Integration"],
+    techStack: ["Ethereum", "Solidity", "Web3.js", "IPFS"],
   },
 ];
 

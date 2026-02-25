@@ -53,7 +53,6 @@ export default function OurApproach() {
         <div className="cards-grid">
           {features.map((item, index) => (
             <div key={index} className="card">
-              <div className="icon-box">{item.icon}</div>
               <h3>{item.title}</h3>
             </div>
           ))}

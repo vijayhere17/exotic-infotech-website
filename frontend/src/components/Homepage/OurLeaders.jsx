@@ -10,12 +10,12 @@ import manmeet from "../../assets/images/manmeet.jpeg";
 const leadersMain = [
   {
     name: "Riddhi Rana",
-    role: "CEO",
+    role: "Founder",
     img: "https://exoticinfotech.com/Riddhi%20image.jpg",
   },
   {
     name: "Yash Shah",
-    role: "Founder",
+    role: "Co-Founder",
     img: "https://exoticinfotech.com/Yash%20Image.jpg",
   },
 ];

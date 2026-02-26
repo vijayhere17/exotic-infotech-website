@@ -23,9 +23,11 @@
 
 .navbar-brand img {
   
-  width: 400px;
+  width: 250px;
   object-fit: contain;
-  margin-top: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
+
 }
 
 .nav-menu {
@@ -76,31 +78,34 @@
 }
 
 .mega-menu {
-  display: none; 
   position: absolute;
-   top: 100%;
+  top: 90%;
   left: 50%;
-  transform: translateX(-50%);
-  width: 1000px;
+  transform: translate(-50%, 20px);
+
+  width: min(1100px, 90vw);   
   background: #ffffff;
   padding: 45px;
   border-radius: 20px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+
   opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.25s ease;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 0.3s ease;
   z-index: 1000;
 }
 
 .mega-menu.show {
-  display: block;
   opacity: 1;
-  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
 }
-
 .mega-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px 60px;
 }
 

@@ -6,63 +6,69 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
   overflow: hidden;
+  background: #000;
 }
 
-
-.hero-video {
+.spline-wrapper {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.spline-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: 0;
+  height: 115%;
+  border: none;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  z-index: 1;
-
-  background: radial-gradient(
-    circle at center,
-    rgba(0, 0, 0, 0.2) 35%,
-    rgba(2, 6, 23, 0.8) 100%
-  );
+  z-index: 2;
+ 
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 100%;
-  color: white;
+  transform: translateY(-40px);
+  pointer-events: none;
 }
 
 .subtitle {
   letter-spacing: 4px;
   font-size: 14px;
   font-weight: 600;
-  color: #ffffffcc;
+  color: #0d5b96;
   margin-bottom: 40px;
 }
 
+
 .flip-wrapper {
-  min-height: 100px;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .flip-text {
   position: relative;
-  display: inline-block;   
+  display: inline-block;
   font-size: 80px;
   font-weight: 700;
   line-height: 1.2;
   background: #0d5b96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  z-index: 1;           
+  z-index: 1;
+  width: 1000px;
 }
 
 
@@ -72,16 +78,14 @@
   left: 10px;
   top: 10px;
   z-index: -1;
-
   color: rgba(2, 6, 23, 0.95);
   filter: blur(14px);
 }
 
-
 .hero-description {
-  margin-top: 25px;
+  margin-top: 35px;
   font-size: 18px;
-  color: #e2e8f0;
+  color: #0d5b96;
   line-height: 1.7;
   max-width: 900px;
   margin-left: auto;
@@ -105,8 +109,8 @@
 }
 
 .cta-btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.5);
 }
 
 .arrow-icon {
@@ -117,15 +121,16 @@
   transform: translateX(6px);
 }
 
+
 @media (max-width: 1024px) {
   .flip-text {
-    font-size: 42px;
+    font-size: 52px;
   }
 }
 
 @media (max-width: 768px) {
   .flip-text {
-    font-size: 34px;
+    font-size: 38px;
   }
 
   .hero-description {
@@ -150,4 +155,8 @@
   .hero-description {
     font-size: 14px;
   }
+}
+
+.hero-overlay {
+  pointer-events: none;
 }

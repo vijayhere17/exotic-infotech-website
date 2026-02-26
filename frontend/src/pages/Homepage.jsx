@@ -9,17 +9,20 @@ import TechnologiesSection from "../components/Technologies/TechnologiesSection"
 import ContactSection from "../components/AboutUs/ContactSection";
 import { Contact } from "lucide-react";
 import SectionProblem from "../components/Homepage/SectionProblem";
-import SectionWhatWeBuild from "../components/Homepage/SectionWhatWeBuild";
+// import SectionWhatWeBuild from "../components/Homepage/SectionWhatWeBuild";
 import WhatweBuild from "../components/Homepage/WhatWeBuild";
+import ClientLogoSlider from "../components/Homepage/ClientLogoSlider";
+import Testimonials from "../components/Homepage/Testimonials";
+import Jatin from "../components/Homepage/jatin.jsx"
 
 
 export default function Homepage() {
   return (
     <div>
-
+      <Jatin />
       <Hero />
       <SectionProblem />
-      <SectionWhatWeBuild />
+      {/* <SectionWhatWeBuild /> */}
       <WhatweBuild />
       {/* <Services /> */}
       <Counter />
@@ -27,6 +30,8 @@ export default function Homepage() {
       <IndustriesSection />
       <TechnologiesSection />
       <Leader />
+      <ClientLogoSlider />
+      <Testimonials />
       <ContactSection />
       
     </div>

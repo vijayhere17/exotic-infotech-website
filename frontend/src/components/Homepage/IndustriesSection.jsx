@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./IndustriesSection.css";
-import Healthcare from "../../assets/Industries/Healthcare.jpg";
-import RealEastate from "../../assets/Industries/RealEstate.jpg";
-import Architects from "../../assets/Industries/Architects.jpg";
-import Manufacturing from "../../assets/Industries/Manufacturing.jpg";
-import Education from "../../assets/Industries/Education.jpg";
-import Hospitality from "../../assets/Industries/Hospitality.jpg";
-import Import from "../../assets/Industries/ImportExport.jpg";
-import Logistics from "../../assets/Industries/Logistics.jpg";
-import Sports from "../../assets/Industries/Sports.jpg";
+import Healthcare from "../../assets/Industries/helthcare.webp";
+import RealEastate from "../../assets/Industries/realestate.jpg";
+import Architects from "../../assets/Industries/Architects.jpeg";
+import Manufacturing from "../../assets/Industries/manufacturing.jpg";
+import Education from "../../assets/Industries/education.jpg";
+import Hospitality from "../../assets/Industries/hospitality.webp";
+import Import from "../../assets/Industries/import.webp";
+import Logistics from "../../assets/Industries/logistics.png";
+import Sports from "../../assets/Industries/sports.jpg";
 
 const industries = [
   {

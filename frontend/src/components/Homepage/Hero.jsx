@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import "./Hero.css";
-import video from "../../assets/exoticvideo1.mp4";
+// import video from "../../assets/exoticvideo1.mp4";
 
 const texts = [
   "Serving Businesses Across Europe & Asia",
@@ -25,9 +25,19 @@ const Hero = () => {
 
   return (
     <section className="hero-container">
-      <video className="hero-video" autoPlay loop muted playsInline>
-        <source src={video} type="video/mp4" />
-      </video>
+      {/* Spline Interactive Background */}
+<div className="spline-wrapper">
+  <iframe
+    id="spline-frame"
+    src="https://my.spline.design/serenityinsymmetry-dbX7kaVDRrzDSyBdrMUeFWIY/"
+    frameBorder="0"
+    title="Spline Background"
+    className="spline-iframe"
+  ></iframe>
+
+
+ 
+</div>
 
       <div className="hero-overlay"></div>
 

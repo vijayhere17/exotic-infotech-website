@@ -1,6 +1,6 @@
 .problem-section {
   padding: 110px 40px;
-  background: #f8fafc;
+  background: #0d5b96;
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,7 +14,7 @@
   font-size: 60px;
   font-weight: 700;
   margin-bottom: 30px;
-  background: #0d5b96;
+  background: #f8fafc;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -41,7 +41,7 @@
   margin: 0 auto 80px auto;
   font-size: 16px;
   line-height: 1.7;
-  color: #475569;
+  color: #f8fafc;
 }
 
 .problem-flow {

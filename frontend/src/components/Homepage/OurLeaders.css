@@ -1,8 +1,7 @@
 .leaders-section {
   width: 100%;
   padding: 80px 20px;
-  background: url("https://www.transparenttextures.com/patterns/cubes.png"),
-              linear-gradient(180deg, #eaf4fb, #f7fbff);
+  background: #0d5b96;
   text-align: center;
 }
 
@@ -13,7 +12,7 @@
 
 .leaders-small-title {
   font-size: 14px;
-  color: #1f4e8c; 
+  color: #f8fafc; 
   margin-bottom: 10px;
   letter-spacing: 1px;
 }
@@ -21,7 +20,7 @@
 .leaders-title {
   font-size: 44px;
   font-weight: 700;
-  color: #0a2540;
+  color: #f8fafc;
   margin-bottom: 15px;
 }
 
@@ -29,13 +28,13 @@
   max-width: 900px;
   margin: 0 auto 60px;
   font-size: 18px;
-  color: #333;
+  color: #f8fafc;
 }
 
 .badgee {
   font-size: 60px;
   font-weight: 800;
-  background: #0d5b96;
+  background: #f8fafc;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 15px;
@@ -69,8 +68,8 @@
   height: 200px;
   margin: auto;
   border-radius: 50%;
-  background: #0d5b96;
-  padding: 6px;
+  background: #f8fafc;;
+  padding: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +82,7 @@
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  background: #fff;
+  background: #f8fafc;
 }
 
 
@@ -100,16 +99,17 @@
 .leader-card h3 {
   margin-top: 20px;
   font-size: 22px;
-  color: #000;
+  color: #f8fafc;
 }
 
 .leader-card h4 {
   margin-top: 20px;
   font-size: 20px;
+  color: #f8fafc;
 }
 
 .leader-card p {
-  color: #444;
+  color: #f8fafc;
   margin-top: 5px;
 }
 

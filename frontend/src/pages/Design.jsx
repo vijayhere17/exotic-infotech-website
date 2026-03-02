@@ -1,4 +1,4 @@
-import ContactSection from "../components/Aboutus/ContactSection";
+import ContactSection from "../components/Letsconnect/ContactSection";
 
 function Design() {
   return (

@@ -6,7 +6,7 @@ const WhatsAppButton = () => {
   const message = "Hello! I would like to know more about your services.";
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
+    message,
   )}`;
 
   return (
@@ -33,9 +33,9 @@ const WhatsAppButton = () => {
             <stop offset="100%" stopColor="rgba(255,255,255,0)" />
           </linearGradient>
         </defs>
-   
+
         <circle cx="32" cy="32" r="30" fill="url(#premiumGreen)" />
-        
+
         <circle cx="24" cy="24" r="20" fill="url(#innerShine)" opacity="0.4" />
 
         <path

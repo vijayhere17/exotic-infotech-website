@@ -13,48 +13,39 @@ import Sports from "../../assets/Industries/sports.jpg";
 const industries = [
   {
     title: "Healthcare",
-    image:
-      Healthcare,
+    image: Healthcare,
   },
   {
     title: "Real Estate",
-    image:
-      RealEastate,
+    image: RealEastate,
   },
-  { 
+  {
     title: "Architects & Interior",
-    image:
-      Architects,
+    image: Architects,
   },
   {
     title: "Manufacturing",
-    image:
-      Manufacturing,
+    image: Manufacturing,
   },
   {
     title: "Education",
-    image:
-      Education,
+    image: Education,
   },
   {
     title: "Hospitality",
-    image:
-      Hospitality,
+    image: Hospitality,
   },
   {
     title: "Import/Export",
-    image:
-      Import,
+    image: Import,
   },
   {
     title: "Logistics",
-    image:
-      Logistics,
+    image: Logistics,
   },
   {
     title: "Sports",
-    image:
-      Sports,
+    image: Sports,
   },
 ];
 
@@ -69,9 +60,7 @@ export default function IndustriesSection() {
         {industries.map((item, index) => (
           <div
             key={index}
-            className={`industry-card ${
-              activeIndex === index ? "active" : ""
-            }`}
+            className={`industry-card ${activeIndex === index ? "active" : ""}`}
             style={{ backgroundImage: `url(${item.image})` }}
             onMouseEnter={() => setActiveIndex(index)}
           >

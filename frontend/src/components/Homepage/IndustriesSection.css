@@ -1,6 +1,6 @@
 .industries-section {
   padding: 80px 5%;
-  background: #0d5b96;
+  background: #f8fafc;
 }
 
 .industries-heading {
@@ -8,7 +8,7 @@
   font-size: 44px;
   font-weight: 700;
   margin-bottom: 70px;
-  background: #f8fafc;
+  background: #0d5b96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

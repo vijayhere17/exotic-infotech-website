@@ -48,11 +48,11 @@ export default function LifeAtExotic() {
         <h2 className="life-title">Life at Exotic!</h2>
 
         <p className="life-description">
-          At Exotic Global, our culture is rooted in innovation,
-          collaboration, and continuous learning. We believe that empowering
-          people is the key to building exceptional technology. Our diverse and
-          inclusive environment fosters creativity, encourages open
-          communication, and supports professional growth.
+          At Exotic Global, our culture is rooted in innovation, collaboration,
+          and continuous learning. We believe that empowering people is the key
+          to building exceptional technology. Our diverse and inclusive
+          environment fosters creativity, encourages open communication, and
+          supports professional growth.
         </p>
 
         <div className="life-grid">

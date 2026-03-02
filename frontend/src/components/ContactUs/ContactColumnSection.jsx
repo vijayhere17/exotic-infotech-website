@@ -5,13 +5,14 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 export default function ContactColumnSection() {
   return (
     <div className="contact-section-wrapper">
-
       <div className="contact-card">
         <FaMapMarkerAlt className="contact-icon" />
         <h3>Address</h3>
         <p>
-          B-315, Alpha Arcades,<br />
-          Near Mipco Chowkdi, GIDC,<br />
+          B-315, Alpha Arcades,
+          <br />
+          Near Mipco Chowkdi, GIDC,
+          <br />
           Bharuch, Gujarat 392001
         </p>
       </div>
@@ -28,7 +29,6 @@ export default function ContactColumnSection() {
         <p>info@exoticinfo.com</p>
         <p>ridhi.rana@exoticinfotech.com</p>
       </div>
-
     </div>
   );
 }

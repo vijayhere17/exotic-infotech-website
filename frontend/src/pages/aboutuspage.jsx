@@ -4,7 +4,7 @@ import OurApproach from "../components/AboutUs/OurApproach";
 import WhyChooseUs from "../components/AboutUs/WhyChoose";
 import LifeAtExotic from "../components/AboutUs/LifeAtExotic";
 import GallerySection from "../components/AboutUs/GallerySection";
-import ContactSection from "../components/Aboutus/ContactSection"; 
+import ContactSection from "../components/Letsconnect/ContactSection"; 
 
 export default function AboutUsPage() {
   return (

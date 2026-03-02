@@ -1,12 +1,13 @@
 .topbar {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 20% 20%,
-      rgba(14,165,233,0.15),
+      rgba(14, 165, 233, 0.15),
       transparent 40%
     ),
     radial-gradient(
       circle at 80% 80%,
-      rgba(132,204,22,0.12),
+      rgba(132, 204, 22, 0.12),
       transparent 40%
     ),
     linear-gradient(135deg, #09172c, #0e1f3d);
@@ -77,41 +78,25 @@
     font-size: 12px;
   }
 
+  .topbar-container {
+    padding: 0 15px;
+    justify-content: center;
+  }
+
   .left-content {
-    padding-left: 15px;
+    padding-left: 0;
     gap: 10px;
-  }
-
-  .right-social {
-    padding-right: 15px;
-    gap: 8px;
-  }
-
-  .topbar-item {
-    gap: 4px;
-  }
-
-  .social-icon {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-@media (max-width: 576px) {
-  .left-content {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
   }
 
   .separator {
     display: none;
   }
 
+  .topbar-item span {
+    white-space: nowrap;
+  }
+
   .right-social {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
+    display: none;
   }
 }

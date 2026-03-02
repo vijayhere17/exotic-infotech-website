@@ -6,20 +6,17 @@ import ApproachSection from "../components/Homepage/ApproachSection";
 import Leader from "../components/Homepage/OurLeaders";
 import IndustriesSection from "../components/Homepage/IndustriesSection";
 import TechnologiesSection from "../components/Technologies/TechnologiesSection";
-import ContactSection from "../components/AboutUs/ContactSection";
+import ContactSection from "../components/Letsconnect/ContactSection";
 import { Contact } from "lucide-react";
 import SectionProblem from "../components/Homepage/SectionProblem";
 // import SectionWhatWeBuild from "../components/Homepage/SectionWhatWeBuild";
 import WhatweBuild from "../components/Homepage/WhatWeBuild";
 import ClientLogoSlider from "../components/Homepage/ClientLogoSlider";
 import Testimonials from "../components/Homepage/Testimonials";
-import Jatin from "../components/Homepage/jatin.jsx"
-
 
 export default function Homepage() {
   return (
     <div>
-      <Jatin />
       <Hero />
       <SectionProblem />
       {/* <SectionWhatWeBuild /> */}
@@ -33,7 +30,6 @@ export default function Homepage() {
       <ClientLogoSlider />
       <Testimonials />
       <ContactSection />
-      
     </div>
   );
 }

@@ -3,9 +3,7 @@ import "./WhyChoose.css";
 import { FaCheck } from "react-icons/fa";
 import image from "../../assets/exoticphotos/img3.jpeg";
 
-
 const points = [
-  
   {
     title: "Agile Delivery",
     desc: "Sprint-based execution with transparency and flexibility.",
@@ -31,7 +29,6 @@ export default function WhyChoose() {
         <h2 className="why-title">Why Choose Exotic Infotech?</h2>
 
         <div className="why-content">
-          
           <div className="why-image">
             <img src={image} alt="Developer Illustration" />
           </div>

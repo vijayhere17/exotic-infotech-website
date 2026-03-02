@@ -35,17 +35,17 @@ export default function BookAnAppointment() {
         </div>
       </div>
 
-      <div className="book-contact-bar">
+      {/* <div className="book-contact-bar">
         <div className="book-contact-item">
           <FaEnvelope className="book-contact-icon" />
-          <span>Info@exoticinfo.com</span>
+          <span>Info@exoticinfotech.com</span>
         </div>
 
         <div className="book-contact-item">
           <FaPhoneAlt className="book-contact-icon" />
           <span>+91 8511624907</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

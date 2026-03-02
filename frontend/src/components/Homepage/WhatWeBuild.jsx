@@ -52,22 +52,22 @@ const WhatWeBuild = () => {
   return (
     <section className="wwb-section">
       <div className="wwb-container">
-        
         <div className="wwb-left">
           <h2 className="wwb-title">What We Build</h2>
           <p className="wwb-description">
-            We build digital ecosystems that empower businesses to innovate, scale, and lead in a competitive world.
+            We build digital ecosystems that empower businesses to innovate,
+            scale, and lead in a competitive world.
           </p>
           <div className="build-ctaa">
-          <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@exoticinfotech.com&su=Project%20Discussion&body=Hi%2C%20I%20would%20like%20to%20discuss%20my%20project."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="cta-buttonn"
-          >
-            Discuss Your Project
-          </a>
-        </div>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@exoticinfotech.com&su=Project%20Discussion&body=Hi%2C%20I%20would%20like%20to%20discuss%20my%20project."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-buttonn"
+            >
+              Discuss Your Project
+            </a>
+          </div>
         </div>
 
         <div className="wwb-grid">

@@ -1,8 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import "swiper/css";
 import "./ClientLogoSlider.css";
+
 import mkLogo from "../../assets/logos/mk.png";
 import jalLogo from "../../assets/logos/jalagarment1.png";
 import scalpLogo from "../../assets/logos/scalping.png";
@@ -10,65 +8,47 @@ import millionLogo from "../../assets/logos/millionaire.png";
 import fourStepLogo from "../../assets/logos/4step.png";
 import regionalLogo from "../../assets/logos/regional.png";
 
+const logos = [
+  { src: mkLogo, large: true },
+  { src: jalLogo, large: false },
+  { src: scalpLogo, large: false },
+  { src: millionLogo, large: true },
+  { src: fourStepLogo, large: false },
+  { src: regionalLogo, large: false },
+];
+
 const ClientLogoSlider = () => {
   return (
-    <section className="client-slider">
-      <h2>Our Projects</h2>
-      <div className="client-container">
-        <Swiper
-          modules={[Autoplay]}
-          slidesPerView={5}
-          spaceBetween={50}
-          loop={true}
-          speed={4000}
-          autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-          }}
-          allowTouchMove={false}
-          breakpoints={{
-            0: { slidesPerView: 2 },
-            576: { slidesPerView: 3 },
-            768: { slidesPerView: 4 },
-            1200: { slidesPerView: 5 },
-          }}
-        >
-          <SwiperSlide>
-            <div className="logo-box">
-              <img src={mkLogo} alt="MK Logo" className="mk-logo" />
-            </div>
-          </SwiperSlide>
+    <section className="client-slider-section">
+      <div className="client-header">
+        <h2>Our Happy Clients</h2>
+        <p>Turning ideas into success stories for our valued clients.</p>
+      </div>
 
-          <SwiperSlide>
-            <div className="logo-box">
-              <img src={jalLogo} alt="Jal Logo" />
+      <div className="logo-slider">
+        <div className="logo-track slide-left">
+          {[...logos, ...logos].map((logo, index) => (
+            <div
+              className={`logo-card ${logo.large ? "large-logo" : ""}`}
+              key={index}
+            >
+              <img src={logo.src} alt="client logo" />
             </div>
-          </SwiperSlide>
+          ))}
+        </div>
+      </div>
 
-          <SwiperSlide>
-            <div className="logo-box">
-              <img src={scalpLogo} alt="Scalp Logo" />
+      <div className="logo-slider">
+        <div className="logo-track slide-right">
+          {[...logos, ...logos].map((logo, index) => (
+            <div
+              className={`logo-card ${logo.large ? "large-logo" : ""}`}
+              key={index}
+            >
+              <img src={logo.src} alt="client logo" />
             </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="logo-box">
-              <img src={millionLogo} alt="Million Logo" />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="logo-box">
-              <img src={fourStepLogo} alt="4Step Logo" />
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="logo-box">
-              <img src={regionalLogo} alt="Regional Logo" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
+          ))}
+        </div>
       </div>
     </section>
   );

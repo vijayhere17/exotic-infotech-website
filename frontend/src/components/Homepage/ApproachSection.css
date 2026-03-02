@@ -8,19 +8,20 @@
 }
 
 .homebadge {
-  font-size: 60px;
+  font-size: 56px;
   font-weight: 800;
   background: #0d5b96;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .hometitle {
-  max-width: 1050px;
+  max-width: 1000px;
   margin: 0 auto 60px;
   font-size: 16px;
   color: #333;
+  line-height: 1.7;
 }
 
 .homeapproach-list {
@@ -34,7 +35,6 @@
 .homerow {
   display: flex;
   align-items: center;
-  position: relative;
 }
 
 .homerow.right {
@@ -65,8 +65,8 @@
   background: rgba(14, 165, 233, 0.06);
 }
 
-.green-soft {
-  background: rgba(132, 204, 22, 0.06);
+.blue-light {
+  background: rgba(14, 165, 233, 0.12);
 }
 
 .icon {
@@ -79,20 +79,18 @@
   align-items: center;
   justify-content: center;
   color: #0d5b96;
-  transition: 0.3s ease;
   flex-shrink: 0;
 }
 
 .homecard:hover .icon {
   border-color: #0d5b96;
-  color: #0d5b96;
 }
 
 .number {
   font-size: 34px;
   font-weight: 700;
   color: #0d5b96;
-  min-width: 70px;
+  min-width: 60px;
 }
 
 .homecontent {
@@ -111,27 +109,14 @@
   color: #475569;
   font-size: 15px;
   line-height: 1.6;
-  max-width: 600px;
 }
 
-.arrow {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  border: 3px solid #e2e8f0;
-  border-left: none;
-  border-bottom: none;
-  border-radius: 50%;
-}
-
-.homerow.right .arrow {
-  right: -30px;
-  transform: rotate(45deg);
-}
-
-.homerow.left .arrow {
-  left: -30px;
-  transform: rotate(-135deg);
+.homecontent ul {
+  margin-top: 10px;
+  padding-left: 18px;
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 .hometech-visual {
@@ -153,37 +138,98 @@
 .floating-box.small {
   width: 140px;
   height: 140px;
-  border-color: #0d5b96;
   margin-top: 40px;
   transform: rotate(-12deg);
 }
 
 @media (max-width: 1024px) {
-  .card {
-    width: 85%;
+
+  .homebadge {
+    font-size: 42px;
+  }
+
+  .homecard {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .hometitle {
+    font-size: 15px;
+    padding: 0 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .row {
+
+  .approach {
+    padding: 90px 20px;
+  }
+
+  .homebadge {
+    font-size: 30px;
+  }
+
+  .hometitle {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .homeapproach-list {
+    gap: 40px;
+  }
+
+  .homerow {
     justify-content: center !important;
   }
 
-  .card {
+  .homecard {
     width: 100%;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .number {
+    font-size: 26px;
+  }
+
+  .homecontent {
     text-align: center;
   }
 
-  .content {
-    text-align: center;
+  .homecontent h3 {
+    font-size: 18px;
   }
 
-  .arrow {
+  .homecontent p,
+  .homecontent ul {
+    font-size: 14px;
+  }
+
+  .hometech-visual {
     display: none;
   }
+}
 
-  .badge {
-    font-size: 32px;
+@media (max-width: 480px) {
+
+  .homebadge {
+    font-size: 24px;
+  }
+
+  .homecontent h3 {
+    font-size: 16px;
+  }
+
+  .homecontent p,
+  .homecontent ul {
+    font-size: 13px;
   }
 }

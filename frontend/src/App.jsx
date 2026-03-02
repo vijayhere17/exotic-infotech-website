@@ -14,6 +14,7 @@ import Blog from "./pages/Blog";
 import Industries from "./pages/Industries";
 import Contact from "./pages/Contact";
 import WhatsAppButton from "./components/WhatsAppButton/WhatsAppButton";
+import Letsconnect from "./pages/letsconnect";
 
 function App() {
   return (
@@ -29,6 +30,8 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/letsconnect" element={<Letsconnect />} />
+
         <Route path="/services" element={<Services />} />
         <Route path="/services/:slug" element={<ServiceDetails />} />
 

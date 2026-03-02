@@ -6,7 +6,7 @@ import {
   Cloud,
   Link2,
   BarChart3,
-  Smartphone
+  Smartphone,
 } from "lucide-react";
 import "./SectionWhatWeBuild.css";
 
@@ -15,7 +15,7 @@ const SectionWhatWeBuild = () => {
     <section className="build-section">
       <div className="build-container">
         <h2 className="build-heading">What We Build</h2>
-          
+
         <div className="build-grid">
           <div className="build-card">
             <Settings size={38} />

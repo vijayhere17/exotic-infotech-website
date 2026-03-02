@@ -1,4 +1,3 @@
-
 const services = [
   {
     slug: "laravel",
@@ -14,7 +13,12 @@ const services = [
       { title: "Secure", description: "Built-in security features." },
       { title: "Scalable", description: "Handles growing applications." },
     ],
-    offerings: ["Web Applications", "API Development", "E-commerce Platforms", "CMS"],
+    offerings: [
+      "Web Applications",
+      "API Development",
+      "E-commerce Platforms",
+      "CMS",
+    ],
     techStack: ["Laravel", "PHP", "MySQL", "Composer"],
   },
   {
@@ -23,15 +27,25 @@ const services = [
     hero: {
       tagline: "Enterprise Solutions",
       title: "Java Development",
-      description: "Build robust, scalable enterprise applications with Java technologies.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      description:
+        "Build robust, scalable enterprise applications with Java technologies.",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     },
     benefits: [
-      { title: "Enterprise Ready", description: "Scalable for large-scale systems." },
+      {
+        title: "Enterprise Ready",
+        description: "Scalable for large-scale systems.",
+      },
       { title: "Secure", description: "Advanced security features." },
       { title: "Cross-Platform", description: "Runs on any platform." },
     ],
-    offerings: ["Spring Boot Apps", "Microservices", "API Development", "Legacy Migration"],
+    offerings: [
+      "Spring Boot Apps",
+      "Microservices",
+      "API Development",
+      "Legacy Migration",
+    ],
     techStack: ["Java", "Spring", "Hibernate", "Maven"],
   },
   {
@@ -41,14 +55,20 @@ const services = [
       tagline: "Dynamic Web Solutions",
       title: "PHP Development",
       description: "Create dynamic websites and applications with PHP.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
     },
     benefits: [
       { title: "Cost-Effective", description: "Affordable development." },
       { title: "Flexible", description: "Easy to integrate." },
       { title: "Fast", description: "Quick execution." },
     ],
-    offerings: ["Custom PHP Apps", "CMS Development", "E-commerce Sites", "API Integration"],
+    offerings: [
+      "Custom PHP Apps",
+      "CMS Development",
+      "E-commerce Sites",
+      "API Integration",
+    ],
     techStack: ["PHP", "Laravel", "Symfony", "MySQL"],
   },
   {
@@ -58,14 +78,20 @@ const services = [
       tagline: "Modern Web Standards",
       title: "HTML5 Development",
       description: "Build responsive and interactive web pages with HTML5.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
     },
     benefits: [
       { title: "Responsive", description: "Works on all devices." },
       { title: "Accessible", description: "User-friendly." },
       { title: "SEO Friendly", description: "Better search rankings." },
     ],
-    offerings: ["Responsive Websites", "Web Apps", "Multimedia Integration", "Progressive Web Apps"],
+    offerings: [
+      "Responsive Websites",
+      "Web Apps",
+      "Multimedia Integration",
+      "Progressive Web Apps",
+    ],
     techStack: ["HTML5", "CSS3", "JavaScript", "Canvas"],
   },
   {
@@ -75,14 +101,20 @@ const services = [
       tagline: "Interactive UIs",
       title: "React Development",
       description: "Develop fast, scalable user interfaces with React.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     benefits: [
       { title: "Component-Based", description: "Reusable components." },
       { title: "Performance", description: "Virtual DOM for speed." },
       { title: "Ecosystem", description: "Rich library support." },
     ],
-    offerings: ["SPA Development", "React Apps", "UI Components", "State Management"],
+    offerings: [
+      "SPA Development",
+      "React Apps",
+      "UI Components",
+      "State Management",
+    ],
     techStack: ["React", "Redux", "Next.js", "TypeScript"],
   },
   {
@@ -92,14 +124,20 @@ const services = [
       tagline: "Full-Featured Framework",
       title: "Angular Development",
       description: "Build complex web applications with Angular.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
     },
     benefits: [
       { title: "MVC Architecture", description: "Structured development." },
       { title: "Two-Way Binding", description: "Real-time updates." },
       { title: "TypeScript", description: "Type safety." },
     ],
-    offerings: ["Angular Apps", "Enterprise Solutions", "Progressive Web Apps", "Testing"],
+    offerings: [
+      "Angular Apps",
+      "Enterprise Solutions",
+      "Progressive Web Apps",
+      "Testing",
+    ],
     techStack: ["Angular", "TypeScript", "RxJS", "NgRx"],
   },
   {
@@ -109,14 +147,20 @@ const services = [
       tagline: "Server-Side JavaScript",
       title: "Node.js Development",
       description: "Create scalable server-side applications with Node.js.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     },
     benefits: [
       { title: "Non-Blocking", description: "Asynchronous I/O." },
       { title: "Scalable", description: "Handles high traffic." },
       { title: "JavaScript", description: "Unified language." },
     ],
-    offerings: ["API Development", "Real-Time Apps", "Microservices", "Server Management"],
+    offerings: [
+      "API Development",
+      "Real-Time Apps",
+      "Microservices",
+      "Server Management",
+    ],
     techStack: ["Node.js", "Express", "MongoDB", "Socket.io"],
   },
   {
@@ -126,14 +170,20 @@ const services = [
       tagline: "Content Management",
       title: "WordPress Development",
       description: "Build websites and blogs with WordPress.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
     },
     benefits: [
       { title: "User-Friendly", description: "Easy to manage." },
       { title: "Customizable", description: "Themes and plugins." },
       { title: "SEO Optimized", description: "Built-in SEO." },
     ],
-    offerings: ["Custom Themes", "Plugin Development", "E-commerce Sites", "Maintenance"],
+    offerings: [
+      "Custom Themes",
+      "Plugin Development",
+      "E-commerce Sites",
+      "Maintenance",
+    ],
     techStack: ["WordPress", "PHP", "MySQL", "WooCommerce"],
   },
   {
@@ -143,14 +193,20 @@ const services = [
       tagline: "E-commerce Powerhouse",
       title: "Magento Development",
       description: "Develop robust e-commerce platforms with Magento.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
     },
     benefits: [
       { title: "Scalable", description: "Grows with business." },
       { title: "Flexible", description: "Customizable features." },
       { title: "Secure", description: "Payment integrations." },
     ],
-    offerings: ["E-commerce Sites", "Custom Modules", "Integration", "Migration"],
+    offerings: [
+      "E-commerce Sites",
+      "Custom Modules",
+      "Integration",
+      "Migration",
+    ],
     techStack: ["Magento", "PHP", "MySQL", "Redis"],
   },
   {
@@ -167,7 +223,12 @@ const services = [
       { title: "Themes", description: "Beautiful designs." },
       { title: "Apps", description: "Extend functionality." },
     ],
-    offerings: ["Store Setup", "Custom Themes", "App Development", "Integration"],
+    offerings: [
+      "Store Setup",
+      "Custom Themes",
+      "App Development",
+      "Integration",
+    ],
     techStack: ["Shopify", "Liquid", "JavaScript", "GraphQL"],
   },
   {
@@ -177,14 +238,20 @@ const services = [
       tagline: "Cross-Platform Mobile",
       title: "React Native Development",
       description: "Build mobile apps for iOS and Android with React Native.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     benefits: [
       { title: "Cross-Platform", description: "One codebase." },
       { title: "Native Performance", description: "Near-native speed." },
       { title: "Reusable", description: "React components." },
     ],
-    offerings: ["Mobile Apps", "UI Development", "API Integration", "Deployment"],
+    offerings: [
+      "Mobile Apps",
+      "UI Development",
+      "API Integration",
+      "Deployment",
+    ],
     techStack: ["React Native", "Expo", "Redux", "Firebase"],
   },
   {
@@ -194,7 +261,8 @@ const services = [
       tagline: "iOS Excellence",
       title: "iOS Development",
       description: "Develop native iOS applications.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
     },
     benefits: [
       { title: "Native", description: "Best performance." },
@@ -211,7 +279,8 @@ const services = [
       tagline: "Android Innovation",
       title: "Android Development",
       description: "Build native Android applications.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
     },
     benefits: [
       { title: "Market Share", description: "Wide reach." },
@@ -228,7 +297,8 @@ const services = [
       tagline: "Cloud Computing",
       title: "AWS Development",
       description: "Leverage Amazon Web Services for scalable solutions.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
     },
     benefits: [
       { title: "Scalable", description: "Auto-scaling." },
@@ -245,7 +315,8 @@ const services = [
       tagline: "Microsoft Cloud",
       title: "Azure Development",
       description: "Build on Microsoft's cloud platform.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
     },
     benefits: [
       { title: "Integration", description: "Microsoft ecosystem." },
@@ -262,7 +333,8 @@ const services = [
       tagline: "Google's Cloud",
       title: "Google Cloud Development",
       description: "Utilize Google's cloud infrastructure.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
     },
     benefits: [
       { title: "AI/ML", description: "TensorFlow integration." },
@@ -279,14 +351,20 @@ const services = [
       tagline: "Intelligent Automation",
       title: "AI Integration",
       description: "Incorporate AI into your applications.",
-      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
     },
     benefits: [
       { title: "Automation", description: "Reduce manual work." },
       { title: "Insights", description: "Data-driven decisions." },
       { title: "Personalization", description: "Tailored experiences." },
     ],
-    offerings: ["Chatbots", "Recommendation Systems", "Image Recognition", "Predictive Analytics"],
+    offerings: [
+      "Chatbots",
+      "Recommendation Systems",
+      "Image Recognition",
+      "Predictive Analytics",
+    ],
     techStack: ["Python", "TensorFlow", "PyTorch", "OpenAI"],
   },
   {

@@ -45,18 +45,18 @@ const Footer = () => {
                 />
               </a>
               <a
-                href="https://www.facebook.com/share/1QWiANxMDX/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook size={18} />
-              </a>
-              <a
                 href="https://www.instagram.com/exotic__infotech?igsh=MXM5bXA5eGtpYmU0eQ=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Instagram size={18} />
+              </a>
+              <a
+                href="https://www.facebook.com/share/1QWiANxMDX/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook size={18} />
               </a>
             </div>
           </div>
@@ -105,7 +105,7 @@ const Footer = () => {
               <span>+91-8511624907</span>
             </div>
             <div className="contact-item">
-              <MapPin size={35} />
+              <MapPin size={18} />
               <span>
                 B-315, Alpha Arcades, Near Mipco Chowkdi, GIDC, Bharuch, Gujarat
                 392001

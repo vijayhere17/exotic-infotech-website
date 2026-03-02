@@ -12,13 +12,13 @@ export default function ServicesSlider() {
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev === otherServices.length - 1 ? 0 : prev + 1
+      prev === otherServices.length - 1 ? 0 : prev + 1,
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? otherServices.length - 1 : prev - 1
+      prev === 0 ? otherServices.length - 1 : prev - 1,
     );
   };
 
@@ -35,9 +35,7 @@ export default function ServicesSlider() {
 
   return (
     <section className="services-slider">
-      <h2 className="slider-title">
-        Our Other Services
-      </h2>
+      <h2 className="slider-title">Our Other Services</h2>
 
       <div className="slider-wrapper">
         <button className="nav-arrow left" onClick={prevSlide}>

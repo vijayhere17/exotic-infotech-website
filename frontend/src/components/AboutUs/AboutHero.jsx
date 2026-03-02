@@ -15,7 +15,7 @@ const AboutHero = () => {
           </h1>
 
           <p className="about-description">
-            Techforce Global is a software development and IT consulting company
+            Exotic Infotech is a software development and IT consulting company
             delivering tailored digital solutions across industries. Our expert
             team offers end-to-end services to meet your business goals.
           </p>
@@ -33,10 +33,7 @@ const AboutHero = () => {
         </div>
 
         <div className="about-right">
-          <img
-            src={image}
-            alt="Exotic Infotech"
-          />
+          <img src={image} alt="Exotic Infotech" />
         </div>
       </div>
     </section>

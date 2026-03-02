@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import "./Hero.css";
 // import video from "../../assets/exoticvideo1.mp4";
+import Spline from "@splinetool/react-spline";
 
 const texts = [
   "Serving Businesses Across Europe & Asia",
@@ -39,6 +40,12 @@ const Hero = () => {
  
 </div>
 
+{/* Robot LEFT */}
+<div className="robot-wrapper">
+  <Spline scene="https://prod.spline.design/8rjNS4omrGHZYl66/scene.splinecode" />
+</div>
+
+
       <div className="hero-overlay"></div>
 
       <div className="hero-content">
@@ -71,6 +78,7 @@ const Hero = () => {
           <ArrowRight className="arrow-icon" size={18} />
         </button>
       </div>
+    
     </section>
   );
 };

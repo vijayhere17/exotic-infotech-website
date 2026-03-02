@@ -5,7 +5,12 @@ const blogs = [
   {
     id: 1,
     image: "/images/blog1.jpg",
-    tags: ["E-commerce", "Mobile App", "software development", "Web Development"],
+    tags: [
+      "E-commerce",
+      "Mobile App",
+      "software development",
+      "Web Development",
+    ],
     title:
       "Driving Continuous Delivery Excellence with Global Technology Partners",
     author: "Akshit Trivedi",
@@ -24,8 +29,7 @@ const blogs = [
     id: 3,
     image: "/images/blog3.jpg",
     tags: ["Node JS", "React JS"],
-    title:
-      "Designing and integrating a GraphQL API with Node.js and React.js",
+    title: "Designing and integrating a GraphQL API with Node.js and React.js",
     author: "Keval Shah",
     date: "2 Aug 2024",
   },

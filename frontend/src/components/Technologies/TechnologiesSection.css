@@ -1,11 +1,11 @@
 .tech-section {
-  padding: 80px 5%;
+  padding: 60px 16px;
   text-align: center;
   background: #f9fbff;
 }
 
 .tech-section h2 {
-  font-size: 60px;
+  font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
   background: #0d5b96;
@@ -17,58 +17,61 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 40px;
+  gap: 10px;
+  margin-bottom: 30px;
 }
 
 .tech-tab {
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: none;
   background: #eaeefb;
-  border-radius: 25px;
+  border-radius: 20px;
   cursor: pointer;
-  transition: 0.3s;
+  font-size: 13px;
+  transition: 0.3s ease;
 }
 
 .tech-tab.active {
   background: #0d5b96;
-  color: #fff;
+  color: #ffffff;
 }
 
 .slider-container {
   overflow: hidden;
   position: relative;
+  width: 100%;
 }
 
 .slider-container:hover .slider-track {
   animation-play-state: paused;
 }
 
+.slider-track {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  animation: scroll linear infinite;
+}
+
 .tech-card {
-  min-width: 180px;
-  background: #fff;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  min-width: 130px;
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
   text-align: center;
-  margin-bottom: 50px;
 }
 
 .tech-card img {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
+  width: 45px;
+  height: 45px;
+  margin-bottom: 10px;
 }
 
 .tech-card p {
+  font-size: 13px;
   font-weight: 600;
-}
-
-.slider-track {
-  display: flex;
-  gap: 25px;
-  width: max-content;
-  animation: scroll linear infinite;
+  margin: 0;
 }
 
 @keyframes scroll {
@@ -80,8 +83,60 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) {
+  .tech-section {
+    padding: 70px 20px;
+  }
+
+  .tech-section h2 {
+    font-size: 36px;
+  }
+
   .tech-card {
-    min-width: 140px;
+    min-width: 150px;
+    padding: 22px;
+  }
+
+  .tech-card img {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+@media (min-width: 992px) {
+  .tech-section {
+    padding: 100px 5%;
+  }
+
+  .tech-section h2 {
+    font-size: 60px;
+  }
+
+  .tech-tabs {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+
+  .tech-tab {
+    font-size: 15px;
+    padding: 10px 22px;
+  }
+
+  .slider-track {
+    gap: 25px;
+  }
+
+  .tech-card {
+    min-width: 180px;
+    padding: 25px;
+  }
+
+  .tech-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tech-card p {
+    font-size: 15px;
   }
 }

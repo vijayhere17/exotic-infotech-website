@@ -1,35 +1,33 @@
 .wwb-section {
-  padding: 100px 20px;
-  background: #f4f7fb;
+  padding: 120px 20px;
+  background: #f8fafc;
   font-family: "Poppins", sans-serif;
 }
 
 .wwb-container {
-  max-width: 100%;
+  max-width: 1300px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 60px;
+  gap: 80px;
   align-items: start;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 .wwb-left {
-  flex: 0 0 30%;
   position: sticky;
   top: 100px;
 }
 
 .wwb-title {
-  font-size: clamp(36px, 5vw, 60px);
+  font-size: 56px;
   font-weight: 700;
   color: #0d5b96;
   margin-bottom: 25px;
+  line-height: 1.2;
 }
 
 .wwb-description {
-  font-size: 20px;
+  font-size: 18px;
   color: #475569;
   line-height: 1.7;
   margin-bottom: 30px;
@@ -37,22 +35,22 @@
 }
 
 .build-ctaa {
-  margin-left: 70px;
+  margin-top: 20px;
 }
 
 .cta-buttonn {
   display: inline-block;
-  padding: 25px 45px;
+  padding: 18px 40px;
   background: #0d5b96;
   color: white;
   border-radius: 50px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease;
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.wwb-btn:hover {
+.cta-buttonn:hover {
   transform: translateY(-4px);
   box-shadow: 0 15px 35px rgba(13, 91, 150, 0.3);
 }
@@ -82,25 +80,91 @@
 }
 
 .wwb-card-title {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 600;
   color: #0f172a;
   margin-bottom: 12px;
-  text-decoration: none;
 }
 
 .wwb-card-desc {
-  font-size: 17px;
+  font-size: 15px;
   color: #64748b;
   line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .wwb-title {
+    font-size: 46px;
+  }
+
+  .wwb-description {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 992px) {
   .wwb-container {
     grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .wwb-left {
+    position: relative;
+    top: unset;
+    text-align: center;
+  }
+
+  .wwb-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .wwb-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .wwb-section {
+    padding: 90px 20px;
+  }
+
+  .wwb-title {
+    font-size: 32px;
+  }
+
+  .wwb-description {
+    font-size: 15px;
   }
 
   .wwb-grid {
     grid-template-columns: 1fr;
+  }
+
+  .wwb-card {
+    padding: 28px;
+  }
+
+  .cta-buttonn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .wwb-title {
+    font-size: 26px;
+  }
+
+  .wwb-description {
+    font-size: 14px;
+  }
+
+  .wwb-card-title {
+    font-size: 18px;
+  }
+
+  .wwb-card-desc {
+    font-size: 14px;
   }
 }

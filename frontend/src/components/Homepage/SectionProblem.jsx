@@ -6,7 +6,6 @@ const SectionProblem = () => {
   return (
     <section className="problem-section">
       <div className="problem-container">
-
         <h2 className="problem-heading">
           Many Growing Businesses Are Stuck With Inefficient Systems
         </h2>
@@ -19,12 +18,11 @@ const SectionProblem = () => {
         </div>
 
         <p className="problem-description">
-          These slow down operations, increase errors, and limit scalability.
-          We help businesses replace manual work with structured digital systems.
+          These slow down operations, increase errors, and limit scalability. We
+          help businesses replace manual work with structured digital systems.
         </p>
 
         <div className="problem-flow">
-
           <div className="flow-card">
             <FileText size={40} />
             <h4>Manual Work</h4>
@@ -55,9 +53,7 @@ const SectionProblem = () => {
               efficiency, and scalability.
             </p>
           </div>
-
         </div>
-
       </div>
     </section>
   );

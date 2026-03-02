@@ -1,12 +1,11 @@
-import ContactSection from "../components/AboutUs/ContactSection";
-import CounterSection from "../components/Homepage/CounterSection";
+import ContactSection from "../components/Letsconnect/ContactSection";
 import ContactColumnSection from "../components/ContactUs/ContactColumnSection";
 import BookAnAppointment from "../components/ContactUs/BookAnAppointment";
 
 function Contact() {
   return (
-    <div style={{  }}>
-      <ContactSection />  
+    <div style={{}}>
+      <ContactSection />
       <ContactColumnSection />
       <BookAnAppointment />
     </div>

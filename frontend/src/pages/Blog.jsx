@@ -1,4 +1,4 @@
-import ContactSection from "../components/AboutUs/ContactSection";
+import ContactSection from "../components/Letsconnect/ContactSection";
 import BlogList from "../components/Blog/BlogList";
 import Categories from "../components/Blog/Categories";
 

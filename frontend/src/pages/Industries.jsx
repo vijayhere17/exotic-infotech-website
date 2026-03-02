@@ -1,9 +1,9 @@
 import IndustriesSection from "../components/Homepage/IndustriesSection";
-import ContactSection from "../components/Aboutus/ContactSection";
+import ContactSection from "../components/Letsconnect/ContactSection";
 
 function Industries() {
   return (
-    <div style={{ }}>
+    <div style={{}}>
       <IndustriesSection />
       <ContactSection />
     </div>

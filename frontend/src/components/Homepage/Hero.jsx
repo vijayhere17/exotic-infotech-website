@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import "./Hero.css";
-// import video from "../../assets/exoticvideo1.mp4";
-import Spline from "@splinetool/react-spline";
 
 const texts = [
   "Serving Businesses Across Europe & Asia",
@@ -16,38 +14,51 @@ const texts = [
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
+  const [loadBackground, setLoadBackground] = useState(false);
+  const [loadRobot, setLoadRobot] = useState(false);
 
   useEffect(() => {
+    // Text animation interval
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % texts.length);
     }, 3000);
-    return () => clearInterval(interval);
+
+    // Lazy load spline background & robot
+    const bgTimer = setTimeout(() => {
+      setLoadBackground(true);
+    }, 300);
+
+    const robotTimer = setTimeout(() => {
+      setLoadRobot(true);
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(bgTimer);
+      clearTimeout(robotTimer);
+    };
   }, []);
 
   return (
     <section className="hero-container">
-      {/* Spline Interactive Background */}
-<div className="spline-wrapper">
-  <iframe
-    id="spline-frame"
-    src="https://my.spline.design/serenityinsymmetry-dbX7kaVDRrzDSyBdrMUeFWIY/"
-    frameBorder="0"
-    title="Spline Background"
-    className="spline-iframe"
-  ></iframe>
 
+      {/* Background Spline (Lazy Loaded) */}
+      <div className="spline-wrapper">
+        {loadBackground && (
+          <iframe
+            src="https://my.spline.design/serenityinsymmetry-dbX7kaVDRrzDSyBdrMUeFWIY/"
+            frameBorder="0"
+            title="Spline Background"
+            className="spline-iframe"
+            loading="lazy"
+            allow="autoplay; fullscreen"
+          />
+        )}
+      </div>
 
- 
-</div>
+      <div className="hero-overlay" />
 
-{/* Robot LEFT */}
-<div className="robot-wrapper">
-  <Spline scene="https://prod.spline.design/8rjNS4omrGHZYl66/scene.splinecode" />
-</div>
-
-
-      <div className="hero-overlay"></div>
-
+      {/* Main Content */}
       <div className="hero-content">
         <h4 className="subtitle">EMPOWERING YOUR</h4>
 
@@ -68,17 +79,31 @@ const Hero = () => {
         </div>
 
         <p className="hero-description">
-          We support companies in Europe, India, and other international markets
+          We support companies in Europe, India, and international markets
           with structured development processes, clear communication, and
           scalable technology solutions.
         </p>
 
         <button className="cta-btn">
-          Let’s Connect
+          Let's Connect
           <ArrowRight className="arrow-icon" size={18} />
         </button>
       </div>
-    
+
+      {/* Robot — Lazy Loaded */}
+      {loadRobot && (
+        <div className="robot-wrapper">
+          <iframe
+            src="https://my.spline.design/robotcopy-Yk4ylNmQiBD8fvq8uWKtornn/"
+            frameBorder="0"
+            title="Robot"
+            className="robot-iframe"
+            loading="lazy"
+            allow="autoplay; fullscreen"
+          />
+        </div>
+      )}
+
     </section>
   );
 };

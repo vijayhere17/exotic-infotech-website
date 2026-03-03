@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-
 import Headersection from "./components/Homepage/HeaderSection";
 import Header from "./components/Homepage/Header";
 import Footer from "./components/Homepage/Footer";
@@ -21,7 +20,6 @@ function App() {
     <>
       <Headersection />
       <Header />
-
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/company" element={<Company />} />
@@ -38,7 +36,6 @@ function App() {
         <Route path="*" element={<div>404 Page Not Found</div>} />
       </Routes>
       <WhatsAppButton />
-
       <Footer />
       <Footersection />
     </>

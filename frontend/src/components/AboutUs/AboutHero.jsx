@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutHero.css";
 import { FaStar } from "react-icons/fa";
-import image from "../../assets/exoticphotos/img7.jpeg";
+import image from "../../assets/exoticphotos/company2.png";
 
 const AboutHero = () => {
   return (

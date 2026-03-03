@@ -51,7 +51,7 @@ const ContactSection = () => {
               <div>
                 <h4>Address</h4>
                 <span>
-                  B-315, Alpha Arcades,<br></br> Near Mipco Chowkdi, GIDC,
+                  B-315, Alpha Arcades, Near Mipco Chowkdi, GIDC,
                   <br></br> Bharuch, Gujarat 392001
                 </span>
               </div>
@@ -106,7 +106,7 @@ const ContactSection = () => {
 
             <input type="text" placeholder="Phone" />
 
-            <textarea rows="10" placeholder="Message"></textarea>
+            <textarea rows="13" placeholder="Message"></textarea>
 
             <button type="submit">SUBMIT BUTTON</button>
           </form>

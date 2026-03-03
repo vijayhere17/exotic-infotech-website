@@ -138,11 +138,11 @@ const Header = () => {
               Blog
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link to="/contact" className="nav-link">
               Contact
             </Link>
-          </li>
+          </li> */}
 
           <li>
             <Link to="/letsconnect">
